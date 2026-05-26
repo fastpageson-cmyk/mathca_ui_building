@@ -250,8 +250,8 @@
           <div
             class="flex items-center gap-2 font-sans text-[14px] text-text-secondary"
           >
-            <span class="h-1.5 w-1.5 rounded-full bg-matcha-green/50"></span
-            ><span>같은 학교 학생끼리만</span>
+            <span class="h-1.5 w-1.5 rounded-full" style="background:#5B8C5A"></span
+            ><span id="user-count-badge" style="font-weight:500; color:#5B8C5A">1,847명의 학생이 이용 중</span>
           </div>
         </div>
       </section>
@@ -383,156 +383,136 @@
             </h2>
           </div>
           <div class="flex flex-col items-center gap-8 w-full max-w-[480px]">
-            <div class="flex items-center gap-2">
-              <div
-                class="rounded-full transition-all duration-300"
-                style="width: 24px; height: 8px; background-color: #5b8c5a"
-              ></div>
-              <div
-                class="rounded-full transition-all duration-300"
-                style="
-                  width: 8px;
-                  height: 8px;
-                  background-color: rgba(0, 0, 0, 0.1);
-                "
-              ></div>
-              <div
-                class="rounded-full transition-all duration-300"
-                style="
-                  width: 8px;
-                  height: 8px;
-                  background-color: rgba(0, 0, 0, 0.1);
-                "
-              ></div>
+            <div class="flex items-center gap-2" id="q-dots">
+              <div id="q-dot-0" class="rounded-full transition-all duration-300"
+                style="width: 24px; height: 8px; background-color: #5b8c5a"></div>
+              <div id="q-dot-1" class="rounded-full transition-all duration-300"
+                style="width: 8px; height: 8px; background-color: rgba(0,0,0,0.1)"></div>
+              <div id="q-dot-2" class="rounded-full transition-all duration-300"
+                style="width: 8px; height: 8px; background-color: rgba(0,0,0,0.1)"></div>
             </div>
-            <div
-              class="glass-subtle w-full rounded-[20px] p-7 md:p-8"
-              style="animation: fadeUp 0.4s ease forwards"
-            >
+            <div id="q-card" class="glass-subtle w-full rounded-[20px] p-7 md:p-8"
+              style="animation: fadeUp 0.4s ease forwards; transition: opacity 0.2s ease;">
               <div class="mb-5">
-                <span
+                <span id="q-badge"
                   class="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-sans text-[11px] font-medium"
-                  style="background: rgba(198, 122, 82, 0.125); color: #c67a52"
-                  ><span
-                    class="h-1.5 w-1.5 rounded-full shrink-0"
-                    style="background: rgba(198, 122, 82, 0.6)"
-                  ></span
-                  >성격</span
-                >
+                  style="background: rgba(198,122,82,0.125); color: #c67a52"
+                  ><span id="q-badge-dot" class="h-1.5 w-1.5 rounded-full shrink-0"
+                    style="background: rgba(198,122,82,0.6)"></span
+                  ><span id="q-category">연애 스타일</span></span>
               </div>
-              <p
+              <p id="q-text"
                 class="mb-7 text-center font-serif text-[20px] leading-[1.4] text-charcoal md:text-[22px]"
-                style="white-space: pre-line"
-              >
-                나는 처음 본 사람에게 먼저 말을 거는 것이 편하다
-              </p>
+                style="white-space: pre-line">카톡을 읽고 바로 답장 안 하는 사람이
+좀 이해가 안 간다</p>
               <div class="flex flex-col gap-3">
                 <div class="flex justify-between px-1">
-                  <span class="font-sans text-[12px] text-text-muted"
-                    >매우 아니다</span
-                  ><span class="font-sans text-[12px] text-text-muted"
-                    >매우 그렇다</span
-                  >
+                  <span class="font-sans text-[12px] text-text-muted">매우 아니다</span>
+                  <span class="font-sans text-[12px] text-text-muted">매우 그렇다</span>
                 </div>
                 <div class="flex items-center justify-between gap-2">
-                  <button
-                    type="button"
-                    class="flex flex-1 flex-col items-center gap-1.5"
-                  >
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="
-                        background-color: #ffffff;
-                        border: 1.5px solid #d0ccc4;
-                      "
-                    >
-                      <span
-                        class="font-sans text-[15px] font-medium"
-                        style="color: #9a9a8a"
-                        >1</span
-                      >
+                  <button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">1</span>
                     </div></button
-                  ><button
-                    type="button"
-                    class="flex flex-1 flex-col items-center gap-1.5"
-                  >
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="
-                        background-color: #ffffff;
-                        border: 1.5px solid #d0ccc4;
-                      "
-                    >
-                      <span
-                        class="font-sans text-[15px] font-medium"
-                        style="color: #9a9a8a"
-                        >2</span
-                      >
+                  ><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">2</span>
                     </div></button
-                  ><button
-                    type="button"
-                    class="flex flex-1 flex-col items-center gap-1.5"
-                  >
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="
-                        background-color: #ffffff;
-                        border: 1.5px solid #d0ccc4;
-                      "
-                    >
-                      <span
-                        class="font-sans text-[15px] font-medium"
-                        style="color: #9a9a8a"
-                        >3</span
-                      >
+                  ><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">3</span>
                     </div></button
-                  ><button
-                    type="button"
-                    class="flex flex-1 flex-col items-center gap-1.5"
-                  >
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="
-                        background-color: #ffffff;
-                        border: 1.5px solid #d0ccc4;
-                      "
-                    >
-                      <span
-                        class="font-sans text-[15px] font-medium"
-                        style="color: #9a9a8a"
-                        >4</span
-                      >
+                  ><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">4</span>
                     </div></button
-                  ><button
-                    type="button"
-                    class="flex flex-1 flex-col items-center gap-1.5"
-                  >
-                    <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="
-                        background-color: #ffffff;
-                        border: 1.5px solid #d0ccc4;
-                      "
-                    >
-                      <span
-                        class="font-sans text-[15px] font-medium"
-                        style="color: #9a9a8a"
-                        >5</span
-                      >
+                  ><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">5</span>
                     </div>
                   </button>
                 </div>
               </div>
             </div>
-            <p class="font-sans text-[12px] text-text-muted">
-              맛보기
-              <!-- -->1<!-- -->
-              /
-              <!-- -->3
-            </p>
+            <p id="q-counter" class="font-sans text-[12px] text-text-muted">맛보기 1 / 3</p>
           </div>
         </section>
       </div>
+      <script>
+        /* ── 샘플 질문 인터랙션 ── */
+        (function () {
+          var questions = [
+            { category: '연애 스타일', color: '#c67a52', bg: 'rgba(198,122,82,0.125)', dot: 'rgba(198,122,82,0.6)',
+              text: '카톡을 읽고 바로 답장 안 하는 사람이\n좀 이해가 안 간다' },
+            { category: '생활 습관',  color: '#5B8C5A', bg: 'rgba(91,140,90,0.1)',    dot: 'rgba(91,140,90,0.55)',
+              text: '계획 없이 즉흥적으로 노는 게\n훨씬 더 재밌다' },
+            { category: '가치관',    color: '#7B61C4', bg: 'rgba(123,97,196,0.1)',   dot: 'rgba(123,97,196,0.55)',
+              text: '새벽에 혼자 뭔가 보다가\n날 새본 적이 있다' }
+          ];
+          var cur = 0;
+          var card    = document.getElementById('q-card');
+          var badge   = document.getElementById('q-badge');
+          var bdot    = document.getElementById('q-badge-dot');
+          var catEl   = document.getElementById('q-category');
+          var textEl  = document.getElementById('q-text');
+          var counter = document.getElementById('q-counter');
+          var dots    = [0,1,2].map(function(i){ return document.getElementById('q-dot-'+i); });
+
+          function updateDots(idx) {
+            dots.forEach(function(d,i){
+              d.style.width           = i===idx ? '24px' : '8px';
+              d.style.height          = '8px';
+              d.style.backgroundColor = i===idx ? questions[idx].color : 'rgba(0,0,0,0.1)';
+            });
+          }
+
+          function goTo(idx) {
+            var q = questions[idx];
+            card.style.opacity = '0';
+            setTimeout(function(){
+              badge.style.background = q.bg;
+              badge.style.color      = q.color;
+              bdot.style.background  = q.dot;
+              catEl.textContent      = q.category;
+              textEl.textContent     = q.text;
+              counter.textContent    = '맛보기 ' + (idx+1) + ' / 3';
+              updateDots(idx);
+              document.querySelectorAll('.q-scale-btn > div').forEach(function(d){
+                d.style.backgroundColor = '#ffffff';
+                d.style.border = '1.5px solid #d0ccc4';
+                d.querySelector('span').style.color = '#9a9a8a';
+              });
+              card.style.opacity = '1';
+            }, 200);
+          }
+
+          document.querySelectorAll('.q-scale-btn').forEach(function(btn){
+            btn.addEventListener('click', function(){
+              var circle = btn.querySelector('div');
+              document.querySelectorAll('.q-scale-btn > div').forEach(function(d){
+                d.style.backgroundColor = '#ffffff';
+                d.style.border = '1.5px solid #d0ccc4';
+                d.querySelector('span').style.color = '#9a9a8a';
+              });
+              circle.style.backgroundColor = questions[cur].color;
+              circle.style.border = '1.5px solid ' + questions[cur].color;
+              circle.querySelector('span').style.color = '#ffffff';
+              setTimeout(function(){
+                cur = (cur + 1) % questions.length;
+                goTo(cur);
+              }, 320);
+            });
+          });
+
+          updateDots(0);
+        })();
+      </script>
 
       <style>
         /* ── 공통 구조 ── */
