@@ -1,46 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 버전 컨트롤 로직
-  const btnV1 = document.getElementById('btn-v1');
-  const btnV2 = document.getElementById('btn-v2');
-  const btnV3 = document.getElementById('btn-v3');
-  const btnV4 = document.getElementById('btn-v4');
-  const sectionSummary = document.getElementById('section-summary');
-  const sectionAnalysis = document.getElementById('section-analysis');
-
-  function updateActiveButton(activeBtn) {
-    if(!btnV1) return;
-    [btnV1, btnV2, btnV3, btnV4].forEach(btn => {
-      btn.classList.remove('active');
-    });
-    activeBtn.classList.add('active');
-  }
-
-  if (btnV1) {
-    btnV1.addEventListener('click', () => {
-      sectionSummary.style.display = 'block';
-      sectionAnalysis.style.display = 'block';
-      updateActiveButton(btnV1);
-    });
-
-    btnV2.addEventListener('click', () => {
-      sectionSummary.style.display = 'none';
-      sectionAnalysis.style.display = 'block';
-      updateActiveButton(btnV2);
-    });
-
-    btnV3.addEventListener('click', () => {
-      sectionSummary.style.display = 'block';
-      sectionAnalysis.style.display = 'none';
-      updateActiveButton(btnV3);
-    });
-
-    btnV4.addEventListener('click', () => {
-      sectionSummary.style.display = 'none';
-      sectionAnalysis.style.display = 'none';
-      updateActiveButton(btnV4);
-    });
-  }
-
   // 동적 멘트 렌더링 로직
   const container = document.getElementById('report-container');
   if (!container) return;

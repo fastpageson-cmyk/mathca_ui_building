@@ -3,85 +3,106 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Matcha Report Versions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'IBM Plex Sans', sans-serif;
-      background: #e8e8e8;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .header {
-      padding: 16px;
-      background: #ffffff;
-      text-align: center;
-      border-bottom: 1px solid #dcdcdc;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-      z-index: 10;
-    }
-    .toggle-group {
-      display: inline-flex;
-      background: #f0f0f0;
-      border-radius: 8px;
-      padding: 4px;
-    }
-    .toggle-btn {
-      background: transparent;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 14px;
-      font-family: 'IBM Plex Sans', sans-serif;
-      cursor: pointer;
-      color: #777;
-      transition: all 0.2s;
-    }
-    .toggle-btn.active {
-      background: #fff;
-      color: #222;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-    iframe {
-      flex: 1;
-      width: 100%;
-      border: none;
-      background: #fff;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/report.css" />
+  <title>matcha - 매칭 리포트</title>
+  <meta name="description" content="나랑 가장 잘 맞는 상대방과의 상세 매칭 분석 리포트입니다." />
 </head>
-<body>
-  <div class="header">
-    <div class="toggle-group">
-      <button id="btn-classic" class="toggle-btn">클래식 디자인 (이메일 폼)</button>
-      <button id="btn-modern" class="toggle-btn active">모던 디자인 (웹앱 폼)</button>
+<body class="antialiased">
+  <!-- Background Orbs -->
+  <div class="glass-orb orb-1"></div>
+  <div class="glass-orb orb-2"></div>
+
+  <main class="report-container">
+    <!-- Main Report Card -->
+    <div class="report-card">
+      <div class="report-header">
+        <span class="report-badge">Compatibility Report</span>
+        <h1 class="report-title">딱 맞는 상대를 찾았어요!</h1>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section">
+        <h3 class="section-title">상대방</h3>
+        <p class="profile-email"><a href="mailto:kimgunwoo@email.com" target="_blank">kimgunwoo@email.com</a></p>
+        <p class="profile-intro">맞차 유저가 1000명이 되었으면 좋겠습니다.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section score-section">
+        <h3 class="section-title">총 궁합도</h3>
+        <div class="score-display">
+          <span class="score-number">86</span><span class="score-percent">%</span>
+        </div>
+        <p class="score-text">성격 결이 잘 맞아요!</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div id="section-summary" class="section">
+        <h3 class="section-title">분석 요약</h3>
+        <ul class="summary-list">
+          <li>사교적인 성향이 비슷해요</li>
+          <li>에너지를 얻는 방식이 비슷해요</li>
+          <li>활발한 성격이 비슷해요</li>
+        </ul>
+      </div>
+
+      <!-- Dynamic Report Container -->
+      <div id="report-container" class="dynamic-container"></div>
+
+      <div id="section-analysis">
+        <div class="divider" style="margin-top:0;"></div>
+        <div class="section">
+          <h3 class="section-title">섹션 분석</h3>
+          
+          <div class="progress-item">
+            <div class="progress-info">
+              <span>성격</span>
+              <span class="progress-value">91%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 91%"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span>가치관</span>
+              <span class="progress-value">89%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 89%"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span>라이프스타일</span>
+              <span class="progress-value">76%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 76%"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span>연애관</span>
+              <span class="progress-value">84%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 84%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-copy">© matcha</p>
     </div>
-    <p style="margin: 10px 0 0 0; font-size: 13px; color: #888;">아래 화면 안의 버튼을 클릭해 세부 요소(V1~V4)를 제외해 볼 수 있습니다.</p>
-  </div>
-  <iframe id="frame" src="report_modern.html"></iframe>
-  <script>
-    const btnClassic = document.getElementById('btn-classic');
-    const btnModern = document.getElementById('btn-modern');
-    const frame = document.getElementById('frame');
-    
-    btnClassic.addEventListener('click', () => {
-      btnClassic.classList.add('active');
-      btnModern.classList.remove('active');
-      frame.src = 'report_classic.html';
-    });
-    
-    btnModern.addEventListener('click', () => {
-      btnModern.classList.add('active');
-      btnClassic.classList.remove('active');
-      frame.src = 'report_modern.html';
-    });
-  </script>
+  </main>
+
+  <script src="src/js/report.js"></script>
 </body>
 </html>
