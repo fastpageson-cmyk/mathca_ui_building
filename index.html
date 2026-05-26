@@ -1,100 +1,90 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Google Fonts — DM Serif Display + IBM Plex Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./src/style.css" />
-    <meta name="next-size-adjust" content="" />
-    <title>matcha - 같은 학교에서 나랑 다 맞는 사람</title>
-    <meta
-      name="description"
-      content="취향, 성격, 가치관까지 60가지 질문으로 같은 학교에서 진짜 잘 맞는 사람을 찾아드려요."
-    />
-    <meta
-      property="og:title"
-      content="matcha - 같은 학교에서 나랑 다 맞는 사람"
-    />
-    <meta
-      property="og:description"
-      content="취향, 성격, 가치관까지 60가지 질문으로 같은 학교에서 진짜 잘 맞는 사람을 찾아드려요."
-    />
-    <meta property="og:url" content="https://trymatcha.cc" />
-    <meta property="og:site_name" content="matcha" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="matcha - 같은 학교에서 나랑 다 맞는 사람"
-    />
-    <meta
-      name="twitter:description"
-      content="취향, 성격, 가치관까지 60가지 질문으로 같은 학교에서 진짜 잘 맞는 사람을 찾아드려요."
-    />
-    <link
-      rel="icon"
-      href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/icon.svg?icon.5f537fb4.svg"
-      sizes="any"
-      type="image/svg+xml"
-    />
-    <script>
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "w7spres131");
-    </script>
-    <style>
-      /* 스크롤바 숨김 유틸리티 */
-      .no-scrollbar::-webkit-scrollbar { display: none; }
-      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-      /* 부드러운 오토 마키 애니메이션 */
-      @keyframes scroll-x {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-      }
-      .animate-scroll-x {
-        display: flex;
-        width: max-content;
-        animation: scroll-x 30s linear infinite;
-      }
-      .animate-scroll-x:hover {
-        animation-play-state: paused;
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google Fonts — DM Serif Display + IBM Plex Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <meta name="next-size-adjust" content="" />
+  <title>matcha - 같은 학교에서 나랑 다 맞는 사람</title>
+  <meta name="description" content="취향, 성격, 가치관까지 60가지 질문으로 같은 학교에서 진짜 잘 맞는 사람을 찾아드려요." />
+  <meta property="og:title" content="matcha - 같은 학교에서 나랑 다 맞는 사람" />
+  <meta property="og:description" content="취향, 성격, 가치관까지 60가지 질문으로 같은 학교에서 진짜 잘 맞는 사람을 찾아드려요." />
+  <meta property="og:url" content="https://trymatcha.cc" />
+  <meta property="og:site_name" content="matcha" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="matcha - 같은 학교에서 나랑 다 맞는 사람" />
+  <meta name="twitter:description" content="취향, 성격, 가치관까지 60가지 질문으로 같은 학교에서 진짜 잘 맞는 사람을 찾아드려요." />
+  <link rel="icon" href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/icon.svg?icon.5f537fb4.svg" sizes="any"
+    type="image/svg+xml" />
+  <script>
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "w7spres131");
+  </script>
+  <style>
+    /* 스크롤바 숨김 유틸리티 */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* 부드러운 오토 마키 애니메이션 */
+    @keyframes scroll-x {
+      0% {
+        transform: translateX(0);
       }
 
-      /* 스크롤 진입 애니메이션 — visible 상태 */
-      .scroll-reveal.visible {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
+      100% {
+        transform: translateX(-50%);
       }
-    </style>
-  </head>
-  <body
-    class="dm_serif_display_942a225f-module__lXwr_W__variable ibm_plex_sans_cb083296-module__47fUlq__variable antialiased"
-  >
-    <div hidden=""><!--$--><!--/$--></div>
-    <!--$-->
-    <div class="min-h-screen bg-warm-cream">
-      <nav
-        class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4"
-      >
-        <div
-          class="w-full max-w-[720px] overflow-hidden"
-          style="
+    }
+
+    .animate-scroll-x {
+      display: flex;
+      width: max-content;
+      animation: scroll-x 30s linear infinite;
+    }
+
+    .animate-scroll-x:hover {
+      animation-play-state: paused;
+    }
+
+    /* 스크롤 진입 애니메이션 — visible 상태 */
+    .scroll-reveal.visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+  </style>
+</head>
+
+<body
+  class="dm_serif_display_942a225f-module__lXwr_W__variable ibm_plex_sans_cb083296-module__47fUlq__variable antialiased">
+  <div hidden=""><!--$--><!--/$--></div>
+  <!--$-->
+  <div class="min-h-screen bg-warm-cream">
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4">
+      <div class="w-full max-w-[720px] overflow-hidden" style="
             border-radius: 9999px;
             background: rgba(255, 255, 255, 0.45);
             backdrop-filter: blur(24px) saturate(1.4);
@@ -104,122 +94,76 @@
               0 4px 24px rgba(0, 0, 0, 0.04),
               inset 0 1px 0 rgba(255, 255, 255, 0.7);
             transition: border-radius 0.3s ease;
-          "
-        >
-          <div class="flex items-center justify-between px-6 py-3">
-            <a
-              class="font-serif text-[22px] text-deep-forest"
-              href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/"
-              >matcha</a
-            >
-            <div class="hidden items-center gap-6 md:flex">
-              <a
-                class="font-sans text-[14px] font-medium text-text-secondary transition-colors hover:text-charcoal"
-                href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/#intro"
-                >소개</a
-              ><a
-                class="font-sans text-[14px] font-medium text-text-secondary transition-colors hover:text-charcoal"
-                href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/stats"
-                >통계</a
-              ><a
-                class="rounded-full bg-deep-forest px-5 py-2 font-sans text-[13px] font-medium text-white transition-opacity hover:opacity-90"
-                href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/verify"
-                >시작하기</a
-              >
-            </div>
-            <button
-              type="button"
-              class="flex flex-col gap-1.5 md:hidden"
-              aria-label="메뉴 열기"
-            >
-              <span
-                class="block h-0.5 w-5 bg-charcoal transition-transform"
-              ></span
-              ><span
-                class="block h-0.5 w-5 bg-charcoal transition-opacity"
-              ></span
-              ><span
-                class="block h-0.5 w-5 bg-charcoal transition-transform"
-              ></span>
-            </button>
+          ">
+        <div class="flex items-center justify-between px-6 py-3">
+          <a class="font-serif text-[22px] text-deep-forest"
+            href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/">matcha</a>
+          <div class="hidden items-center gap-6 md:flex">
+            <a class="font-sans text-[14px] font-medium text-text-secondary transition-colors hover:text-charcoal"
+              href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/#intro">소개</a><a
+              class="font-sans text-[14px] font-medium text-text-secondary transition-colors hover:text-charcoal"
+              href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/stats">통계</a><a
+              class="rounded-full bg-deep-forest px-5 py-2 font-sans text-[13px] font-medium text-white transition-opacity hover:opacity-90"
+              href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/verify">시작하기</a>
           </div>
+          <button type="button" class="flex flex-col gap-1.5 md:hidden" aria-label="메뉴 열기">
+            <span class="block h-0.5 w-5 bg-charcoal transition-transform"></span><span
+              class="block h-0.5 w-5 bg-charcoal transition-opacity"></span><span
+              class="block h-0.5 w-5 bg-charcoal transition-transform"></span>
+          </button>
         </div>
-      </nav>
-      <section
-        class="relative flex min-h-screen flex-col items-center justify-center px-5 pt-20 text-center overflow-hidden"
-      >
-        <div
-          class="glass-orb"
-          style="
+      </div>
+    </nav>
+    <section
+      class="relative flex min-h-screen flex-col items-center justify-center px-5 pt-20 text-center overflow-hidden">
+      <div class="glass-orb" style="
             width: 400px;
             height: 400px;
             top: -80px;
             right: -120px;
             background: rgba(163, 201, 168, 0.35);
-          "
-        ></div>
-        <div
-          class="glass-orb"
-          style="
+          "></div>
+      <div class="glass-orb" style="
             width: 300px;
             height: 300px;
             bottom: -60px;
             left: -100px;
             background: rgba(91, 140, 90, 0.2);
             animation-delay: -7s;
-          "
-        ></div>
-        <div
-          class="glass-orb"
-          style="
+          "></div>
+      <div class="glass-orb" style="
             width: 200px;
             height: 200px;
             top: 120px;
             left: 30%;
             background: rgba(232, 221, 208, 0.4);
             animation-delay: -13s;
-          "
-        ></div>
-        <p class="relative mb-3 font-sans text-[12px] text-text-muted">
-          inspired by<!-- -->
-          <a
-            href="https://trydatedrop.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="underline underline-offset-2 transition-colors hover:text-matcha-green"
-            >date drop</a
-          >
-        </p>
-        <h1
-          class="relative mb-5 whitespace-pre-line font-serif text-[36px] leading-tight tracking-[-1px] text-charcoal md:text-[64px]"
-        >
-          “맞는 사람을 찾다, 맞차”
-        </h1>
-        <p
-          class="relative mb-10 max-w-[500px] font-sans text-[16px] leading-relaxed text-text-secondary md:text-[18px]"
-        >
-          우리 학교 안에서, 나랑 진짜 잘 맞는 사람이 누구일까?<br />60가지
-          질문으로 찾아볼 수 있어요.
-        </p>
-        <div
-          class="relative flex w-full max-w-[520px] flex-col gap-2.5 sm:flex-row sm:gap-2.5"
-        >
-          <input
-            type="email"
-            placeholder="학교 이메일을 입력하세요"
-            class="flex-1 rounded-full px-6 py-[14px] font-sans text-[15px] text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-matcha-green/30"
-            style="
+          "></div>
+      <p class="relative mb-3 font-sans text-[12px] text-text-muted">
+        inspired by<!-- -->
+        <a href="https://trydatedrop.com/" target="_blank" rel="noopener noreferrer"
+          class="underline underline-offset-2 transition-colors hover:text-matcha-green">date drop</a>
+      </p>
+      <h1
+        class="relative mb-5 whitespace-pre-line font-serif text-[36px] leading-tight tracking-[-1px] text-charcoal md:text-[64px]">
+        “맞는 사람을 찾다, 맞차”
+      </h1>
+      <p class="relative mb-10 max-w-[500px] font-sans text-[16px] leading-relaxed text-text-secondary md:text-[18px]">
+        우리 학교 안에서, 나랑 진짜 잘 맞는 사람이 누구일까?<br />60가지
+        질문으로 찾아볼 수 있어요.
+      </p>
+      <div class="relative flex w-full max-w-[520px] flex-col gap-2.5 sm:flex-row sm:gap-2.5">
+        <input type="email" placeholder="학교 이메일을 입력하세요"
+          class="flex-1 rounded-full px-6 py-[14px] font-sans text-[15px] text-charcoal placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-matcha-green/30"
+          style="
               background: rgba(255, 255, 255, 0.5);
               backdrop-filter: blur(20px) saturate(1.3);
               -webkit-backdrop-filter: blur(20px) saturate(1.3);
               border: 1px solid rgba(255, 255, 255, 0.6);
               box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
-            "
-            value=""
-          /><button
-            type="button"
-            class="rounded-full px-7 py-[14px] font-sans text-[15px] font-semibold text-white transition-opacity hover:opacity-90 whitespace-nowrap disabled:opacity-60"
-            style="
+            " value="" /><button type="button"
+          class="rounded-full px-7 py-[14px] font-sans text-[15px] font-semibold text-white transition-opacity hover:opacity-90 whitespace-nowrap disabled:opacity-60"
+          style="
               background: rgba(91, 140, 90, 0.85);
               backdrop-filter: blur(20px) saturate(1.3);
               -webkit-backdrop-filter: blur(20px) saturate(1.3);
@@ -227,1089 +171,738 @@
               box-shadow:
                 0 4px 20px rgba(91, 140, 90, 0.15),
                 inset 0 1px 0 rgba(255, 255, 255, 0.15);
-            "
-          >
-            시작하기
-          </button>
+            ">
+          시작하기
+        </button>
+      </div>
+      <div class="relative mt-12 flex flex-col items-center gap-4 sm:flex-row sm:gap-10">
+        <div class="flex items-center gap-2 font-sans text-[14px] text-text-secondary">
+          <span class="h-1.5 w-1.5 rounded-full bg-matcha-green/50"></span><span>60가지 성향 분석</span>
         </div>
-        <div
-          class="relative mt-12 flex flex-col items-center gap-4 sm:flex-row sm:gap-10"
-        >
-          <div
-            class="flex items-center gap-2 font-sans text-[14px] text-text-secondary"
-          >
-            <span class="h-1.5 w-1.5 rounded-full bg-matcha-green/50"></span
-            ><span>60가지 성향 분석</span>
-          </div>
-          <div
-            class="flex items-center gap-2 font-sans text-[14px] text-text-secondary"
-          >
-            <span class="h-1.5 w-1.5 rounded-full bg-matcha-green/50"></span
-            ><span>모든 면에서 궁합 비교</span>
-          </div>
-          <div
-            class="flex items-center gap-2 font-sans text-[14px] text-text-secondary"
-          >
-            <span class="h-1.5 w-1.5 rounded-full" style="background:#5B8C5A"></span
-            ><span id="user-count-badge" style="font-weight:500; color:#5B8C5A">1,847명의 학생이 이용 중</span>
-          </div>
+        <div class="flex items-center gap-2 font-sans text-[14px] text-text-secondary">
+          <span class="h-1.5 w-1.5 rounded-full bg-matcha-green/50"></span><span>모든 면에서 궁합 비교</span>
         </div>
-      </section>
-      <div
-        class="scroll-reveal"
-        style="
+        <div class="flex items-center gap-2 font-sans text-[14px] text-text-secondary">
+          <span class="h-1.5 w-1.5 rounded-full" style="background:#5B8C5A"></span><span id="user-count-badge"
+            style="font-weight:500; color:#5B8C5A">300명의 학생이 이용 중</span>
+        </div>
+      </div>
+    </section>
+    <div class="scroll-reveal" style="
           opacity: 0;
           transform: translateY(32px);
           transition:
             opacity 0.7s ease 0ms,
             transform 0.7s ease 0ms;
-        "
-      >
-        <section
-          id="intro"
-          class="flex flex-col items-center gap-12 px-5 py-32 md:px-[120px]"
-        >
-          <div class="flex flex-col items-center gap-3 text-center">
-            <h2
-              class="font-serif text-[28px] tracking-[-0.5px] text-charcoal md:text-[36px]"
-            >
-              이렇게 찾아드려요
-            </h2>
-          </div>
-          <div
-            class="grid w-full max-w-[960px] grid-cols-1 gap-8 md:grid-cols-3"
-          >
-            <div
-              class="glass-subtle flex flex-col gap-4 rounded-[20px] p-8"
-              style="
+        ">
+      <section id="intro" class="flex flex-col items-center gap-12 px-5 py-32 md:px-[120px]">
+        <div class="flex flex-col items-center gap-3 text-center">
+          <h2 class="font-serif text-[28px] tracking-[-0.5px] text-charcoal md:text-[36px]">
+            이렇게 찾아드려요
+          </h2>
+        </div>
+        <div class="grid w-full max-w-[960px] grid-cols-1 gap-8 md:grid-cols-3">
+          <div class="glass-subtle flex flex-col gap-4 rounded-[20px] p-8" style="
                 opacity: 0;
                 transform: translateY(24px);
                 animation: fadeUp 0.6s ease 0s forwards;
-              "
-            >
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded-full font-sans text-[13px] font-semibold text-matcha-green"
-                style="background: rgba(91, 140, 90, 0.08)"
-              >
-                01
-              </div>
-              <h3 class="font-sans text-[16px] font-semibold text-charcoal">
-                학교 이메일로 인증
-              </h3>
-              <p
-                class="font-sans text-[14px] leading-[1.6] text-text-secondary"
-              >
-                같은 학교 학생인지 확인하는 과정이에요. 이메일 하나면 끝.
-              </p>
-            </div>
+              ">
             <div
-              class="glass-subtle flex flex-col gap-4 rounded-[20px] p-8"
-              style="
+              class="flex h-10 w-10 items-center justify-center rounded-full font-sans text-[13px] font-semibold text-matcha-green"
+              style="background: rgba(91, 140, 90, 0.08)">
+              01
+            </div>
+            <h3 class="font-sans text-[16px] font-semibold text-charcoal">
+              학교 이메일로 인증
+            </h3>
+            <p class="font-sans text-[14px] leading-[1.6] text-text-secondary">
+              같은 학교 학생인지 확인하는 과정이에요. 이메일 하나면 끝.
+            </p>
+          </div>
+          <div class="glass-subtle flex flex-col gap-4 rounded-[20px] p-8" style="
                 opacity: 0;
                 transform: translateY(24px);
                 animation: fadeUp 0.6s ease 0.15s forwards;
-              "
-            >
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded-full font-sans text-[13px] font-semibold text-matcha-green"
-                style="background: rgba(91, 140, 90, 0.08)"
-              >
-                02
-              </div>
-              <h3 class="font-sans text-[16px] font-semibold text-charcoal">
-                나에 대해 60가지 답하기
-              </h3>
-              <p
-                class="font-sans text-[14px] leading-[1.6] text-text-secondary"
-              >
-                성격, 취향, 가치관, 연애 스타일, 생활 습관. 대충이 아니라,
-                제대로 물어봐요.
-              </p>
-            </div>
+              ">
             <div
-              class="glass-subtle flex flex-col gap-4 rounded-[20px] p-8"
-              style="
+              class="flex h-10 w-10 items-center justify-center rounded-full font-sans text-[13px] font-semibold text-matcha-green"
+              style="background: rgba(91, 140, 90, 0.08)">
+              02
+            </div>
+            <h3 class="font-sans text-[16px] font-semibold text-charcoal">
+              나에 대해 60가지 답하기
+            </h3>
+            <p class="font-sans text-[14px] leading-[1.6] text-text-secondary">
+              성격, 취향, 가치관, 연애 스타일, 생활 습관. 대충이 아니라,
+              제대로 물어봐요.
+            </p>
+          </div>
+          <div class="glass-subtle flex flex-col gap-4 rounded-[20px] p-8" style="
                 opacity: 0;
                 transform: translateY(24px);
                 animation: fadeUp 0.6s ease 0.3s forwards;
-              "
-            >
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded-full font-sans text-[13px] font-semibold text-matcha-green"
-                style="background: rgba(91, 140, 90, 0.08)"
-              >
-                03
-              </div>
-              <h3 class="font-sans text-[16px] font-semibold text-charcoal">
-                나랑 제일 맞는 한 사람
-              </h3>
-              <p
-                class="font-sans text-[14px] leading-[1.6] text-text-secondary"
-              >
-                답변을 하나하나 비교해서, 진짜 잘 맞는 사람을 찾아 연결해드려요.
-              </p>
+              ">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full font-sans text-[13px] font-semibold text-matcha-green"
+              style="background: rgba(91, 140, 90, 0.08)">
+              03
             </div>
+            <h3 class="font-sans text-[16px] font-semibold text-charcoal">
+              나랑 제일 맞는 한 사람
+            </h3>
+            <p class="font-sans text-[14px] leading-[1.6] text-text-secondary">
+              답변을 하나하나 비교해서, 진짜 잘 맞는 사람을 찾아 연결해드려요.
+            </p>
           </div>
-          <p
-            class="mx-auto mt-14 max-w-[500px] text-center font-sans text-[13px] leading-[1.7] text-text-muted"
-          >
-            개발자도 여러분의 이메일을 마음대로 볼 수 없어요. 매칭 연락용 이메일
-            외에, 누군지 알 수 있는 정보는 아무것도 갖고 있지 않습니다.
-          </p>
-        </section>
-      </div>
-      <div
-        class="scroll-reveal"
-        style="
+        </div>
+        <p class="mx-auto mt-14 max-w-[500px] text-center font-sans text-[13px] leading-[1.7] text-text-muted">
+          개발자도 여러분의 이메일을 마음대로 볼 수 없어요. 매칭 연락용 이메일
+          외에, 누군지 알 수 있는 정보는 아무것도 갖고 있지 않습니다.
+        </p>
+      </section>
+    </div>
+    <div class="scroll-reveal" style="
           opacity: 0;
           transform: translateY(32px);
           transition:
             opacity 0.7s ease 0ms,
             transform 0.7s ease 0ms;
-        "
-      >
-        <section
-          class="flex flex-col items-center gap-7 px-5 py-32 md:px-[120px]"
-        >
-          <div class="flex flex-col items-center gap-3 text-center">
-            <span
-              class="font-sans text-[13px] font-medium uppercase tracking-[0.5px] text-text-muted"
-              >미리 해보기</span
-            >
-            <h2
-              class="font-serif text-[28px] tracking-[-0.5px] text-charcoal md:text-[36px]"
-            >
-              어떤 질문인지 궁금하죠?
-            </h2>
+        ">
+      <section class="flex flex-col items-center gap-7 px-5 py-32 md:px-[120px]">
+        <div class="flex flex-col items-center gap-3 text-center">
+          <span class="font-sans text-[13px] font-medium uppercase tracking-[0.5px] text-text-muted">미리 해보기</span>
+          <h2 class="font-serif text-[28px] tracking-[-0.5px] text-charcoal md:text-[36px]">
+            어떤 질문인지 궁금하죠?
+          </h2>
+        </div>
+        <div class="flex flex-col items-center gap-8 w-full max-w-[480px]">
+          <div class="flex items-center gap-2" id="q-dots">
+            <div id="q-dot-0" class="rounded-full transition-all duration-300"
+              style="width: 24px; height: 8px; background-color: #5b8c5a"></div>
+            <div id="q-dot-1" class="rounded-full transition-all duration-300"
+              style="width: 8px; height: 8px; background-color: rgba(0,0,0,0.1)"></div>
+            <div id="q-dot-2" class="rounded-full transition-all duration-300"
+              style="width: 8px; height: 8px; background-color: rgba(0,0,0,0.1)"></div>
           </div>
-          <div class="flex flex-col items-center gap-8 w-full max-w-[480px]">
-            <div class="flex items-center gap-2" id="q-dots">
-              <div id="q-dot-0" class="rounded-full transition-all duration-300"
-                style="width: 24px; height: 8px; background-color: #5b8c5a"></div>
-              <div id="q-dot-1" class="rounded-full transition-all duration-300"
-                style="width: 8px; height: 8px; background-color: rgba(0,0,0,0.1)"></div>
-              <div id="q-dot-2" class="rounded-full transition-all duration-300"
-                style="width: 8px; height: 8px; background-color: rgba(0,0,0,0.1)"></div>
+          <div id="q-card" class="glass-subtle w-full rounded-[20px] p-7 md:p-8"
+            style="animation: fadeUp 0.4s ease forwards; transition: opacity 0.2s ease;">
+            <div class="mb-5">
+              <span id="q-badge"
+                class="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-sans text-[11px] font-medium"
+                style="background: rgba(198,122,82,0.125); color: #c67a52"><span id="q-badge-dot"
+                  class="h-1.5 w-1.5 rounded-full shrink-0" style="background: rgba(198,122,82,0.6)"></span><span
+                  id="q-category">연애 스타일</span></span>
             </div>
-            <div id="q-card" class="glass-subtle w-full rounded-[20px] p-7 md:p-8"
-              style="animation: fadeUp 0.4s ease forwards; transition: opacity 0.2s ease;">
-              <div class="mb-5">
-                <span id="q-badge"
-                  class="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-sans text-[11px] font-medium"
-                  style="background: rgba(198,122,82,0.125); color: #c67a52"
-                  ><span id="q-badge-dot" class="h-1.5 w-1.5 rounded-full shrink-0"
-                    style="background: rgba(198,122,82,0.6)"></span
-                  ><span id="q-category">연애 스타일</span></span>
+            <p id="q-text" class="mb-7 text-center font-serif text-[20px] leading-[1.4] text-charcoal md:text-[22px]"
+              style="white-space: pre-line">카톡을 읽고 바로 답장 안 하는 사람이
+              좀 이해가 안 간다</p>
+            <div class="flex flex-col gap-3">
+              <div class="flex justify-between px-1">
+                <span class="font-sans text-[12px] text-text-muted">매우 아니다</span>
+                <span class="font-sans text-[12px] text-text-muted">매우 그렇다</span>
               </div>
-              <p id="q-text"
-                class="mb-7 text-center font-serif text-[20px] leading-[1.4] text-charcoal md:text-[22px]"
-                style="white-space: pre-line">카톡을 읽고 바로 답장 안 하는 사람이
-좀 이해가 안 간다</p>
-              <div class="flex flex-col gap-3">
-                <div class="flex justify-between px-1">
-                  <span class="font-sans text-[12px] text-text-muted">매우 아니다</span>
-                  <span class="font-sans text-[12px] text-text-muted">매우 그렇다</span>
-                </div>
-                <div class="flex items-center justify-between gap-2">
-                  <button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
-                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">1</span>
-                    </div></button
-                  ><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
-                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">2</span>
-                    </div></button
-                  ><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
-                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">3</span>
-                    </div></button
-                  ><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
-                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">4</span>
-                    </div></button
-                  ><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
-                      style="background-color:#ffffff;border:1.5px solid #d0ccc4">
-                      <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">5</span>
-                    </div>
-                  </button>
-                </div>
+              <div class="flex items-center justify-between gap-2">
+                <button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                    style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                    <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">1</span>
+                  </div>
+                </button><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                    style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                    <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">2</span>
+                  </div>
+                </button><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                    style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                    <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">3</span>
+                  </div>
+                </button><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                    style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                    <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">4</span>
+                  </div>
+                </button><button type="button" class="q-scale-btn flex flex-1 flex-col items-center gap-1.5">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-full transition-all mx-auto"
+                    style="background-color:#ffffff;border:1.5px solid #d0ccc4">
+                    <span class="font-sans text-[15px] font-medium" style="color:#9a9a8a">5</span>
+                  </div>
+                </button>
               </div>
             </div>
-            <p id="q-counter" class="font-sans text-[12px] text-text-muted">맛보기 1 / 3</p>
           </div>
-        </section>
-      </div>
-      <script>
-        /* ── 샘플 질문 인터랙션 ── */
-        (function () {
-          var questions = [
-            { category: '연애 스타일', color: '#c67a52', bg: 'rgba(198,122,82,0.125)', dot: 'rgba(198,122,82,0.6)',
-              text: '카톡을 읽고 바로 답장 안 하는 사람이\n좀 이해가 안 간다' },
-            { category: '생활 습관',  color: '#5B8C5A', bg: 'rgba(91,140,90,0.1)',    dot: 'rgba(91,140,90,0.55)',
-              text: '계획 없이 즉흥적으로 노는 게\n훨씬 더 재밌다' },
-            { category: '가치관',    color: '#7B61C4', bg: 'rgba(123,97,196,0.1)',   dot: 'rgba(123,97,196,0.55)',
-              text: '새벽에 혼자 뭔가 보다가\n날 새본 적이 있다' }
-          ];
-          var cur = 0;
-          var card    = document.getElementById('q-card');
-          var badge   = document.getElementById('q-badge');
-          var bdot    = document.getElementById('q-badge-dot');
-          var catEl   = document.getElementById('q-category');
-          var textEl  = document.getElementById('q-text');
-          var counter = document.getElementById('q-counter');
-          var dots    = [0,1,2].map(function(i){ return document.getElementById('q-dot-'+i); });
-
-          function updateDots(idx) {
-            dots.forEach(function(d,i){
-              d.style.width           = i===idx ? '24px' : '8px';
-              d.style.height          = '8px';
-              d.style.backgroundColor = i===idx ? questions[idx].color : 'rgba(0,0,0,0.1)';
-            });
+          <p id="q-counter" class="font-sans text-[12px] text-text-muted">맛보기 1 / 3</p>
+        </div>
+      </section>
+    </div>
+    <script>
+      /* ── 샘플 질문 인터랙션 ── */
+      (function () {
+        var questions = [
+          {
+            category: '연애 스타일', color: '#c67a52', bg: 'rgba(198,122,82,0.125)', dot: 'rgba(198,122,82,0.6)',
+            text: '카톡을 읽고 바로 답장 안 하는 사람이\n좀 이해가 안 간다'
+          },
+          {
+            category: '생활 습관', color: '#5B8C5A', bg: 'rgba(91,140,90,0.1)', dot: 'rgba(91,140,90,0.55)',
+            text: '계획 없이 즉흥적으로 노는 게\n훨씬 더 재밌다'
+          },
+          {
+            category: '가치관', color: '#7B61C4', bg: 'rgba(123,97,196,0.1)', dot: 'rgba(123,97,196,0.55)',
+            text: '새벽에 혼자 뭔가 보다가\n날 새본 적이 있다'
           }
+        ];
+        var cur = 0;
+        var card = document.getElementById('q-card');
+        var badge = document.getElementById('q-badge');
+        var bdot = document.getElementById('q-badge-dot');
+        var catEl = document.getElementById('q-category');
+        var textEl = document.getElementById('q-text');
+        var counter = document.getElementById('q-counter');
+        var dots = [0, 1, 2].map(function (i) { return document.getElementById('q-dot-' + i); });
 
-          function goTo(idx) {
-            var q = questions[idx];
-            card.style.opacity = '0';
-            setTimeout(function(){
-              badge.style.background = q.bg;
-              badge.style.color      = q.color;
-              bdot.style.background  = q.dot;
-              catEl.textContent      = q.category;
-              textEl.textContent     = q.text;
-              counter.textContent    = '맛보기 ' + (idx+1) + ' / 3';
-              updateDots(idx);
-              document.querySelectorAll('.q-scale-btn > div').forEach(function(d){
-                d.style.backgroundColor = '#ffffff';
-                d.style.border = '1.5px solid #d0ccc4';
-                d.querySelector('span').style.color = '#9a9a8a';
-              });
-              card.style.opacity = '1';
-            }, 200);
-          }
-
-          document.querySelectorAll('.q-scale-btn').forEach(function(btn){
-            btn.addEventListener('click', function(){
-              var circle = btn.querySelector('div');
-              document.querySelectorAll('.q-scale-btn > div').forEach(function(d){
-                d.style.backgroundColor = '#ffffff';
-                d.style.border = '1.5px solid #d0ccc4';
-                d.querySelector('span').style.color = '#9a9a8a';
-              });
-              circle.style.backgroundColor = questions[cur].color;
-              circle.style.border = '1.5px solid ' + questions[cur].color;
-              circle.querySelector('span').style.color = '#ffffff';
-              setTimeout(function(){
-                cur = (cur + 1) % questions.length;
-                goTo(cur);
-              }, 320);
-            });
+        function updateDots(idx) {
+          dots.forEach(function (d, i) {
+            d.style.width = i === idx ? '24px' : '8px';
+            d.style.height = '8px';
+            d.style.backgroundColor = i === idx ? questions[idx].color : 'rgba(0,0,0,0.1)';
           });
-
-          updateDots(0);
-        })();
-      </script>
-
-      <style>
-        /* ── 공통 구조 ── */
-        .review-section {
-          width: 100%;
-          border-top: 1px solid rgba(0,0,0,0.05);
-        }
-        .scroll-mask {
-          mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
-          -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
-        }
-        .auto-scroll-track {
-          display: flex;
-          width: max-content;
-          animation: scroll-x 32s linear infinite;
-          gap: 20px;
-          padding: 4px 0;
-        }
-        .auto-scroll-track:hover { animation-play-state: paused; }
-
-        /* ── 별점 ── */
-        .stars { display: flex; gap: 2px; }
-        .stars svg { width: 14px; height: 14px; fill: #5B8C5A; }
-
-        /* ── 이니셜 아바타 ── */
-        .avatar {
-          width: 36px; height: 36px; border-radius: 50%;
-          display: flex; align-items: center; justify-content: center;
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 13px; font-weight: 600; flex-shrink: 0;
-          letter-spacing: 0;
         }
 
-        /* ── 시안 A 카드 (Stripe-style) ── */
-        .rcard-a {
-          width: 288px; flex-shrink: 0;
-          background: rgba(255,255,255,0.55);
-          backdrop-filter: blur(16px) saturate(1.2);
-          -webkit-backdrop-filter: blur(16px) saturate(1.2);
-          border: 1px solid rgba(255,255,255,0.5);
-          border-radius: 20px;
-          padding: 24px;
-          display: flex; flex-direction: column; gap: 0;
-          box-shadow: 0 2px 16px rgba(91,140,90,0.06), inset 0 1px 0 rgba(255,255,255,0.7);
-          transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-        .rcard-a:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 12px 36px rgba(91,140,90,0.13), inset 0 1px 0 rgba(255,255,255,0.7);
-        }
-        .rcard-a .quote-text {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 14px; line-height: 1.65;
-          color: rgba(44,44,44,0.75);
-          margin: 14px 0 18px;
-          flex: 1;
-        }
-        .rcard-a .divider {
-          height: 1px;
-          background: rgba(91,140,90,0.1);
-          margin-bottom: 16px;
-        }
-        .rcard-a .profile { display: flex; align-items: center; gap: 10px; }
-        .rcard-a .profile-info { display: flex; flex-direction: column; gap: 1px; }
-        .rcard-a .profile-name {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 13px; font-weight: 600; color: #2C2C2C;
-        }
-        .rcard-a .profile-meta {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 11px; color: #9A9A8A;
+        function goTo(idx) {
+          var q = questions[idx];
+          card.style.opacity = '0';
+          setTimeout(function () {
+            badge.style.background = q.bg;
+            badge.style.color = q.color;
+            bdot.style.background = q.dot;
+            catEl.textContent = q.category;
+            textEl.textContent = q.text;
+            counter.textContent = '맛보기 ' + (idx + 1) + ' / 3';
+            updateDots(idx);
+            document.querySelectorAll('.q-scale-btn > div').forEach(function (d) {
+              d.style.backgroundColor = '#ffffff';
+              d.style.border = '1.5px solid #d0ccc4';
+              d.querySelector('span').style.color = '#9a9a8a';
+            });
+            card.style.opacity = '1';
+          }, 200);
         }
 
-        /* ── 시안 B 카드 (Linear-style) ── */
-        .grid-container {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 16px;
-          width: 100%; max-width: 960px;
-        }
-        @media (min-width: 768px) {
-          .grid-container { grid-template-columns: 1fr 1fr; }
-        }
-        .rcard-b {
-          background: rgba(255,255,255,0.5);
-          backdrop-filter: blur(16px) saturate(1.2);
-          -webkit-backdrop-filter: blur(16px) saturate(1.2);
-          border: 1px solid rgba(91,140,90,0.1);
-          border-radius: 18px;
-          padding: 28px;
-          display: flex; flex-direction: column; gap: 0;
-          box-shadow: 0 1px 12px rgba(91,140,90,0.05);
-          transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-          position: relative; overflow: hidden;
-        }
-        .rcard-b::before {
-          content: '\201C';
-          position: absolute; top: 16px; right: 20px;
-          font-family: 'DM Serif Display', serif;
-          font-size: 72px; line-height: 1;
-          color: rgba(91,140,90,0.07);
-          pointer-events: none;
-          user-select: none;
-        }
-        .rcard-b:hover {
-          transform: translateY(-3px);
-          border-color: rgba(91,140,90,0.25);
-          box-shadow: 0 8px 32px rgba(91,140,90,0.12);
-        }
-        .rcard-b .rb-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 14px; }
-        .rcard-b .rb-badge {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 11px; font-weight: 500;
-          background: rgba(91,140,90,0.08); color: #5B8C5A;
-          padding: 3px 10px; border-radius: 999px;
-          letter-spacing: 0.2px;
-        }
-        .rcard-b .rb-time {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 11px; color: #9A9A8A;
-          padding-top: 2px;
-        }
-        .rcard-b .rb-text {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 14px; line-height: 1.7;
-          color: rgba(44,44,44,0.72);
-          margin-bottom: 20px;
-        }
-        .rcard-b .rb-foot { display: flex; align-items: center; gap: 10px; }
-        .rcard-b .rb-name {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 13px; font-weight: 600; color: #2C2C2C;
-        }
-        .rcard-b .rb-dept {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 11px; color: #9A9A8A; margin-top: 1px;
-        }
+        document.querySelectorAll('.q-scale-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var circle = btn.querySelector('div');
+            document.querySelectorAll('.q-scale-btn > div').forEach(function (d) {
+              d.style.backgroundColor = '#ffffff';
+              d.style.border = '1.5px solid #d0ccc4';
+              d.querySelector('span').style.color = '#9a9a8a';
+            });
+            circle.style.backgroundColor = questions[cur].color;
+            circle.style.border = '1.5px solid ' + questions[cur].color;
+            circle.querySelector('span').style.color = '#ffffff';
+            setTimeout(function () {
+              cur = (cur + 1) % questions.length;
+              goTo(cur);
+            }, 320);
+          });
+        });
 
-        /* ── 시안 C 캐러셀 (Vercel-style) ── */
-        .carousel-wrap { width: 100%; max-width: 760px; position: relative; }
-        .carousel-viewport { overflow: hidden; border-radius: 28px; }
-        .carousel-track {
-          display: flex;
-          transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .carousel-slide {
-          min-width: 100%; flex-shrink: 0;
-        }
-        .rcard-c {
-          background: rgba(255,255,255,0.52);
-          backdrop-filter: blur(20px) saturate(1.3);
-          -webkit-backdrop-filter: blur(20px) saturate(1.3);
-          border: 1px solid rgba(255,255,255,0.55);
-          border-radius: 28px;
-          padding: 52px 56px;
-          text-align: center;
-          position: relative; overflow: hidden;
-          box-shadow: 0 4px 40px rgba(91,140,90,0.08), inset 0 1px 0 rgba(255,255,255,0.75);
-        }
-        @media (max-width: 640px) { .rcard-c { padding: 36px 24px; } }
-        .rcard-c .c-deco {
-          position: absolute; top: -10px; left: 20px;
-          font-family: 'DM Serif Display', serif;
-          font-size: 140px; line-height: 1;
-          color: rgba(91,140,90,0.07);
-          pointer-events: none; user-select: none;
-        }
-        .rcard-c .c-stars { justify-content: center; margin-bottom: 24px; }
-        .rcard-c .c-text {
-          font-family: 'DM Serif Display', serif;
-          font-size: 22px; line-height: 1.55;
-          color: #2C2C2C; position: relative; z-index: 1;
-          margin-bottom: 28px;
-        }
-        @media (min-width: 640px) { .rcard-c .c-text { font-size: 26px; } }
-        .rcard-c .c-profile { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-        .rcard-c .c-name {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 14px; font-weight: 600; color: #5B8C5A;
-        }
-        .rcard-c .c-sub {
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-size: 12px; color: #9A9A8A;
-        }
-        /* 캐러셀 버튼 */
-        .carousel-btn {
-          position: absolute; top: 50%; transform: translateY(-50%);
-          width: 40px; height: 40px; border-radius: 50%;
-          background: rgba(255,255,255,0.75);
-          backdrop-filter: blur(12px);
-          border: 1px solid rgba(91,140,90,0.15);
-          display: flex; align-items: center; justify-content: center;
-          cursor: pointer;
-          transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-          box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-          z-index: 2;
-        }
-        .carousel-btn:hover {
-          background: rgba(255,255,255,0.95);
-          box-shadow: 0 4px 20px rgba(91,140,90,0.15);
-          transform: translateY(-50%) scale(1.06);
-        }
-        .carousel-btn svg { width: 16px; height: 16px; stroke: #5B8C5A; stroke-width: 2; fill: none; }
-        #carousel-prev { left: -20px; }
-        #carousel-next { right: -20px; }
-        @media (max-width: 640px) {
-          #carousel-prev { left: 8px; }
-          #carousel-next { right: 8px; }
-        }
-        /* 인디케이터 */
-        .carousel-dots { display: flex; gap: 8px; justify-content: center; margin-top: 28px; }
-        .carousel-dot {
-          width: 8px; height: 8px; border-radius: 999px;
-          background: rgba(0,0,0,0.1);
-          border: none; cursor: pointer; padding: 0;
-          transition: width 0.3s ease, background 0.3s ease;
-        }
-        .carousel-dot.active {
-          width: 24px;
-          background: #5B8C5A;
-        }
-      </style>
+        updateDots(0);
+      })();
+    </script>
 
-      <div>
-        <section class="flex flex-col items-center gap-4 px-5 py-24 md:px-[120px]" style="padding-bottom: 48px;">
-          <div class="flex flex-col items-center gap-3 text-center">
-            <span class="font-sans text-[12px] font-medium uppercase tracking-[1px] text-matcha-green">User Reviews</span>
-            <h2 class="font-serif text-[28px] tracking-[-0.5px] text-charcoal md:text-[40px]">
-              실제로 연결된 사람들의 이야기
-            </h2>
-            <p class="font-sans text-[15px] text-text-secondary max-w-[460px]" style="line-height: 1.65; margin-top: 4px;">
-              세 가지 레이아웃 시안 중 하나를 선택할 예정입니다.
-            </p>
-          </div>
-        </section>
-      </div>
+    <style>
+      /* ── 공통 구조 ── */
+      .review-section {
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+      }
 
-      <!-- ============================================ -->
-      <!-- 시안 A: Stripe-style Marquee               -->
-      <!-- ============================================ -->
-      <div class="review-section">
-        <section class="flex flex-col items-center gap-3 px-5 md:px-[120px]" style="padding-top: 72px; padding-bottom: 72px;">
-          <div class="flex flex-col items-center gap-2 text-center" style="margin-bottom: 40px;">
-            <span class="font-sans text-[11px] font-medium uppercase tracking-[1.5px] text-matcha-green">시안 A &nbsp;—&nbsp; Marquee</span>
-            <h2 class="font-serif text-[26px] tracking-[-0.5px] text-charcoal md:text-[34px]">끊임없이 흐르는 후기</h2>
-            <p class="font-sans text-[13px] text-text-muted" style="margin-top:2px;">호버하면 잠시 멈춰요</p>
-          </div>
+      .scroll-mask {
+        mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+      }
 
-          <div style="width: 100%; overflow: hidden;" class="scroll-mask">
-            <div class="auto-scroll-track">
+      .auto-scroll-track {
+        display: flex;
+        width: max-content;
+        animation: scroll-x 32s linear infinite;
+        gap: 20px;
+        padding: 4px 0;
+      }
 
-              <!-- ─ 카드 1 ─ -->
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">진짜 잘 맞는 친구 찾았어요. 질문이 이렇게 디테일할 줄 몰랐는데, 매일 연락하는 사이가 됐습니다.</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(91,140,90,0.12); color: #5B8C5A;">경</div>
-                  <div class="profile-info">
-                    <span class="profile-name">경영학과 21학번</span>
-                    <span class="profile-meta">어제 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
+      .auto-scroll-track:hover {
+        animation-play-state: paused;
+      }
 
-              <!-- ─ 카드 2 ─ -->
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">디자인도 너무 예쁘고 결과가 정말 정확해요. 60개 문항이 길다 했는데 다 할 보람이 있습니다!</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(61,90,61,0.1); color: #3D5A3D;">시</div>
-                  <div class="profile-info">
-                    <span class="profile-name">시각디자인과 22학번</span>
-                    <span class="profile-meta">3일 전 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
+      /* ── 별점 ── */
+      .stars {
+        display: flex;
+        gap: 2px;
+      }
 
-              <!-- ─ 카드 3 ─ -->
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">학교 안에서 이렇게 코드 맞는 사람 만날 줄이야. 공대생인데 MBTI도 관심사도 다 비슷해서 신기했어요.</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(163,201,168,0.2); color: #4a7a49;">컴</div>
-                  <div class="profile-info">
-                    <span class="profile-name">컴퓨터공학과 19학번</span>
-                    <span class="profile-meta">1주일 전 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
+      .stars svg {
+        width: 14px;
+        height: 14px;
+        fill: #5B8C5A;
+      }
 
-              <!-- ─ 카드 4 ─ -->
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">주변에 다 추천하고 다녀요. 내 가치관을 제대로 알아주는 사람을 만나는 게 이렇게 다를 줄 몰랐어요.</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(91,140,90,0.09); color: #5B8C5A;">간</div>
-                  <div class="profile-info">
-                    <span class="profile-name">간호학과 23학번</span>
-                    <span class="profile-meta">2주 전 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
+      /* ── 이니셜 아바타 ── */
+      .avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        flex-shrink: 0;
+        letter-spacing: 0;
+      }
 
-              <!-- ─ 카드 5 ─ -->
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">익명이라 부담 없이 솔직하게 답할 수 있었어요. 첫 만남인데도 처음부터 편한 사람이 생겼습니다.</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(61,90,61,0.08); color: #3D5A3D;">사</div>
-                  <div class="profile-info">
-                    <span class="profile-name">사회학과 20학번</span>
-                    <span class="profile-meta">4일 전 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
+      /* ── 시안 A 카드 (Stripe-style) ── */
+      .rcard-a {
+        width: 288px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.55);
+        backdrop-filter: blur(16px) saturate(1.2);
+        -webkit-backdrop-filter: blur(16px) saturate(1.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 2px 16px rgba(91, 140, 90, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
 
-              <!-- ─ 복제본 (루프용) ─ -->
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">진짜 잘 맞는 친구 찾았어요. 질문이 이렇게 디테일할 줄 몰랐는데, 매일 연락하는 사이가 됐습니다.</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(91,140,90,0.12); color: #5B8C5A;">경</div>
-                  <div class="profile-info">
-                    <span class="profile-name">경영학과 21학번</span>
-                    <span class="profile-meta">어제 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">디자인도 너무 예쁘고 결과가 정말 정확해요. 60개 문항이 길다 했는데 다 할 보람이 있습니다!</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(61,90,61,0.1); color: #3D5A3D;">시</div>
-                  <div class="profile-info">
-                    <span class="profile-name">시각디자인과 22학번</span>
-                    <span class="profile-meta">3일 전 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">학교 안에서 이렇게 코드 맞는 사람 만날 줄이야. 공대생인데 MBTI도 관심사도 다 비슷해서 신기했어요.</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(163,201,168,0.2); color: #4a7a49;">컴</div>
-                  <div class="profile-info">
-                    <span class="profile-name">컴퓨터공학과 19학번</span>
-                    <span class="profile-meta">1주일 전 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">주변에 다 추천하고 다녀요. 내 가치관을 제대로 알아주는 사람을 만나는 게 이렇게 다를 줄 몰랐어요.</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(91,140,90,0.09); color: #5B8C5A;">간</div>
-                  <div class="profile-info">
-                    <span class="profile-name">간호학과 23학번</span>
-                    <span class="profile-meta">2주 전 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
-              <div class="rcard-a">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <p class="quote-text">익명이라 부담 없이 솔직하게 답할 수 있었어요. 첫 만남인데도 처음부터 편한 사람이 생겼습니다.</p>
-                <div class="divider"></div>
-                <div class="profile">
-                  <div class="avatar" style="background: rgba(61,90,61,0.08); color: #3D5A3D;">사</div>
-                  <div class="profile-info">
-                    <span class="profile-name">사회학과 20학번</span>
-                    <span class="profile-meta">4일 전 매칭됨 · 경희대</span>
-                  </div>
-                </div>
-              </div>
+      .rcard-a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 36px rgba(91, 140, 90, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      }
 
-            </div><!-- /auto-scroll-track -->
-          </div><!-- /scroll-mask -->
-        </section>
-      </div>
+      .rcard-a .quote-text {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1.65;
+        color: rgba(44, 44, 44, 0.75);
+        margin: 14px 0 18px;
+        flex: 1;
+      }
 
-      <!-- ============================================ -->
-      <!-- 시안 B: Linear-style Grid                  -->
-      <!-- ============================================ -->
-      <div class="review-section">
-        <section class="flex flex-col items-center gap-3 px-5 md:px-[120px]" style="padding-top: 72px; padding-bottom: 72px;">
-          <div class="flex flex-col items-center gap-2 text-center" style="margin-bottom: 40px;">
-            <span class="font-sans text-[11px] font-medium uppercase tracking-[1.5px] text-matcha-green">시안 B &nbsp;—&nbsp; Grid</span>
-            <h2 class="font-serif text-[26px] tracking-[-0.5px] text-charcoal md:text-[34px]">진짜 후기, 정직하게</h2>
-          </div>
+      .rcard-a .divider {
+        height: 1px;
+        background: rgba(91, 140, 90, 0.1);
+        margin-bottom: 16px;
+      }
 
-          <div class="grid-container">
+      .rcard-a .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .rcard-a .profile-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+      }
+
+      .rcard-a .profile-name {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        color: #2C2C2C;
+      }
+
+      .rcard-a .profile-meta {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 11px;
+        color: #9A9A8A;
+      }
+
+    </style>
+
+    <div class="review-section">
+      <section class="flex flex-col items-center gap-3 px-5 md:px-[120px]"
+        style="padding-top: 80px; padding-bottom: 72px;">
+        <div class="flex flex-col items-center gap-3 text-center" style="margin-bottom: 44px;">
+          <span class="font-sans text-[11px] font-medium uppercase tracking-[1.5px] text-matcha-green">후기</span>
+          <h2 class="font-serif text-[28px] tracking-[-0.5px] text-charcoal md:text-[38px]">함께한 사람들의 이야기</h2>
+          <p class="font-sans text-[13px] text-text-muted" style="margin-top:2px;">호버하면 잠시 멈춰요</p>
+        </div>
+
+        <div style="width: 100%; overflow: hidden;" class="scroll-mask">
+          <div class="auto-scroll-track">
 
             <!-- ─ 카드 1 ─ -->
-            <div class="rcard-b">
-              <div class="rb-top">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <span class="rb-time">어제 매칭됨</span>
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
               </div>
-              <p class="rb-text">진짜 잘 맞는 친구 찾았어요. 처음엔 반신반의했는데 60개 문항 응답 결과가 너무 잘 맞아서 놀랐습니다. 가벼운 앱들과 차원이 다른 경험이에요.</p>
-              <div class="rb-foot">
+              <p class="quote-text">진짜 잘 맞는 친구 찾았어요. 질문이 이렇게 디테일할 줄 몰랐는데, 매일 연락하는 사이가 됐습니다.</p>
+              <div class="divider"></div>
+              <div class="profile">
                 <div class="avatar" style="background: rgba(91,140,90,0.12); color: #5B8C5A;">경</div>
-                <div>
-                  <p class="rb-name">경희대 경영학과</p>
-                  <p class="rb-dept">21학번</p>
+                <div class="profile-info">
+                  <span class="profile-name">경영학과 21학번</span>
+                  <span class="profile-meta">어제 매칭됨 · 경희대</span>
                 </div>
               </div>
             </div>
 
             <!-- ─ 카드 2 ─ -->
-            <div class="rcard-b">
-              <div class="rb-top">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <span class="rb-time">3일 전 매칭됨</span>
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
               </div>
-              <p class="rb-text">학교 안에서 이렇게 코드 잘 맞는 사람을 만날 줄이야. 덕분에 매일 카톡하는 친구가 생겼고, 같이 밥도 먹어요.</p>
-              <div class="rb-foot">
-                <div class="avatar" style="background: rgba(163,201,168,0.2); color: #4a7a49;">컴</div>
-                <div>
-                  <p class="rb-name">경희대 컴퓨터공학과</p>
-                  <p class="rb-dept">19학번</p>
+              <p class="quote-text">디자인도 너무 예쁘고 결과가 정말 정확해요. 60개 문항이 길다 했는데 다 할 보람이 있습니다!</p>
+              <div class="divider"></div>
+              <div class="profile">
+                <div class="avatar" style="background: rgba(61,90,61,0.1); color: #3D5A3D;">시</div>
+                <div class="profile-info">
+                  <span class="profile-name">시각디자인과 22학번</span>
+                  <span class="profile-meta">3일 전 매칭됨 · 경희대</span>
                 </div>
               </div>
             </div>
 
             <!-- ─ 카드 3 ─ -->
-            <div class="rcard-b">
-              <div class="rb-top">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <span class="rb-time">1주일 전 매칭됨</span>
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
               </div>
-              <p class="rb-text">디자인도 예쁘고 질문 퀄리티가 높아요. 나와 비슷한 사람과 대화하는 게 이렇게 편안한 일인지 처음 알았어요.</p>
-              <div class="rb-foot">
-                <div class="avatar" style="background: rgba(61,90,61,0.1); color: #3D5A3D;">시</div>
-                <div>
-                  <p class="rb-name">경희대 시각디자인과</p>
-                  <p class="rb-dept">22학번</p>
+              <p class="quote-text">학교 안에서 이렇게 코드 맞는 사람 만날 줄이야. 공대생인데 MBTI도 관심사도 다 비슷해서 신기했어요.</p>
+              <div class="divider"></div>
+              <div class="profile">
+                <div class="avatar" style="background: rgba(163,201,168,0.2); color: #4a7a49;">컴</div>
+                <div class="profile-info">
+                  <span class="profile-name">컴퓨터공학과 19학번</span>
+                  <span class="profile-meta">1주일 전 매칭됨 · 경희대</span>
                 </div>
               </div>
             </div>
 
             <!-- ─ 카드 4 ─ -->
-            <div class="rcard-b">
-              <div class="rb-top">
-                <div class="stars">
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                  <svg viewBox="0 0 16 15" style="width:13px;height:13px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                </div>
-                <span class="rb-time">2주 전 매칭됨</span>
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
               </div>
-              <p class="rb-text">주변에 다 추천하고 다닙니다. 내 가치관을 알아주는 사람을 만나는 게 이렇게 다를 줄 몰랐어요.</p>
-              <div class="rb-foot">
+              <p class="quote-text">주변에 다 추천하고 다녀요. 내 가치관을 제대로 알아주는 사람을 만나는 게 이렇게 다를 줄 몰랐어요.</p>
+              <div class="divider"></div>
+              <div class="profile">
                 <div class="avatar" style="background: rgba(91,140,90,0.09); color: #5B8C5A;">간</div>
-                <div>
-                  <p class="rb-name">경희대 간호학과</p>
-                  <p class="rb-dept">23학번</p>
+                <div class="profile-info">
+                  <span class="profile-name">간호학과 23학번</span>
+                  <span class="profile-meta">2주 전 매칭됨 · 경희대</span>
                 </div>
               </div>
             </div>
 
-          </div><!-- /grid-container -->
-        </section>
-      </div>
-
-      <!-- ============================================ -->
-      <!-- 시안 C: Vercel-style Interactive Carousel  -->
-      <!-- ============================================ -->
-      <div>
-        <section class="flex flex-col items-center gap-3 px-5 md:px-[120px] border-t border-border/50" style="padding-top: 72px; padding-bottom: 80px;">
-          <div class="flex flex-col items-center gap-2 text-center" style="margin-bottom: 48px;">
-            <span class="font-sans text-[11px] font-medium uppercase tracking-[1.5px] text-matcha-green">시안 C &nbsp;—&nbsp; Carousel</span>
-            <h2 class="font-serif text-[26px] tracking-[-0.5px] text-charcoal md:text-[34px]">가장 기억에 남는 한 마디</h2>
-            <p class="font-sans text-[13px] text-text-muted" style="margin-top:2px;">← → 키 또는 버튼으로 이동할 수 있어요</p>
-          </div>
-
-          <div class="carousel-wrap" style="padding: 0 28px;">
-            <div class="carousel-viewport" id="carousel-viewport">
-              <div class="carousel-track" id="carousel-track">
-
-                <!-- ─ 슬라이드 1 ─ -->
-                <div class="carousel-slide">
-                  <div class="rcard-c">
-                    <div class="c-deco">&#8220;</div>
-                    <div class="stars c-stars">
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                    </div>
-                    <p class="c-text">
-                      진짜 잘 맞는 친구 찾았어요.<br />
-                      질문이 이렇게 디테일할 줄 몰랐는데,<br />
-                      매일 연락하는 사이가 됐습니다.
-                    </p>
-                    <div class="c-profile">
-                      <div class="avatar" style="background: rgba(91,140,90,0.12); color: #5B8C5A; margin: 0 auto 6px;">경</div>
-                      <span class="c-name">경희대 경영학과 21학번</span>
-                      <span class="c-sub">어제 매칭됨</span>
-                    </div>
-                  </div>
+            <!-- ─ 카드 5 ─ -->
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+              </div>
+              <p class="quote-text">익명이라 부담 없이 솔직하게 답할 수 있었어요. 첫 만남인데도 처음부터 편한 사람이 생겼습니다.</p>
+              <div class="divider"></div>
+              <div class="profile">
+                <div class="avatar" style="background: rgba(61,90,61,0.08); color: #3D5A3D;">사</div>
+                <div class="profile-info">
+                  <span class="profile-name">사회학과 20학번</span>
+                  <span class="profile-meta">4일 전 매칭됨 · 경희대</span>
                 </div>
-
-                <!-- ─ 슬라이드 2 ─ -->
-                <div class="carousel-slide">
-                  <div class="rcard-c">
-                    <div class="c-deco">&#8220;</div>
-                    <div class="stars c-stars">
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                    </div>
-                    <p class="c-text">
-                      디자인도 너무 예쁘고<br />
-                      결과가 진짜 정확해요.<br />
-                      60개 질문 다 할 보람이 있습니다!
-                    </p>
-                    <div class="c-profile">
-                      <div class="avatar" style="background: rgba(61,90,61,0.1); color: #3D5A3D; margin: 0 auto 6px;">시</div>
-                      <span class="c-name">경희대 시각디자인과 22학번</span>
-                      <span class="c-sub">3일 전 매칭됨</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- ─ 슬라이드 3 ─ -->
-                <div class="carousel-slide">
-                  <div class="rcard-c">
-                    <div class="c-deco">&#8220;</div>
-                    <div class="stars c-stars">
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                      <svg viewBox="0 0 16 15" style="width:16px;height:16px;fill:#5B8C5A"><path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z"/></svg>
-                    </div>
-                    <p class="c-text">
-                      익명이라 솔직하게 답할 수 있었어요.<br />
-                      처음 만나는데도 오래된 친구처럼<br />
-                      편한 사람이 생겼습니다.
-                    </p>
-                    <div class="c-profile">
-                      <div class="avatar" style="background: rgba(163,201,168,0.2); color: #4a7a49; margin: 0 auto 6px;">컴</div>
-                      <span class="c-name">경희대 컴퓨터공학과 19학번</span>
-                      <span class="c-sub">1주일 전 매칭됨</span>
-                    </div>
-                  </div>
-                </div>
-
-              </div><!-- /carousel-track -->
-            </div><!-- /carousel-viewport -->
-
-            <!-- 화살표 버튼 -->
-            <button class="carousel-btn" id="carousel-prev" aria-label="이전 후기">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-            <button class="carousel-btn" id="carousel-next" aria-label="다음 후기">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-            </button>
-
-            <!-- 인디케이터 dots -->
-            <div class="carousel-dots" id="carousel-dots">
-              <button class="carousel-dot active" data-idx="0" aria-label="1번 후기"></button>
-              <button class="carousel-dot" data-idx="1" aria-label="2번 후기"></button>
-              <button class="carousel-dot" data-idx="2" aria-label="3번 후기"></button>
+              </div>
             </div>
 
-          </div><!-- /carousel-wrap -->
-        </section>
-      </div>
-
-      <script>
-        /* ── 시안 C 캐러셀 JS ── */
-        (function () {
-          var track = document.getElementById('carousel-track');
-          var dots  = document.querySelectorAll('.carousel-dot');
-          var total = 3;
-          var cur   = 0;
-
-          function goTo(idx) {
-            cur = (idx + total) % total;
-            track.style.transform = 'translateX(-' + (cur * 100) + '%)';
-            dots.forEach(function (d, i) {
-              d.classList.toggle('active', i === cur);
-            });
-          }
-
-          document.getElementById('carousel-prev').addEventListener('click', function () { goTo(cur - 1); });
-          document.getElementById('carousel-next').addEventListener('click', function () { goTo(cur + 1); });
-
-          dots.forEach(function (d) {
-            d.addEventListener('click', function () { goTo(Number(d.dataset.idx)); });
-          });
-
-          /* 키보드 지원 */
-          document.addEventListener('keydown', function (e) {
-            var vp = document.getElementById('carousel-viewport');
-            if (!vp) return;
-            var rect = vp.getBoundingClientRect();
-            var inView = rect.top < window.innerHeight && rect.bottom > 0;
-            if (!inView) return;
-            if (e.key === 'ArrowLeft')  goTo(cur - 1);
-            if (e.key === 'ArrowRight') goTo(cur + 1);
-          });
-
-          /* 터치 스와이프 */
-          var startX = 0;
-          var vp = document.getElementById('carousel-viewport');
-          vp.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
-          vp.addEventListener('touchend',   function (e) {
-            var diff = startX - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 40) goTo(diff > 0 ? cur + 1 : cur - 1);
-          }, { passive: true });
-        })();
-      </script>
-
-      <div
-        class="scroll-reveal"
-        style="
-          opacity: 0;
-          transform: translateY(32px);
-          transition:
-            opacity 0.7s ease 0ms,
-            transform 0.7s ease 0ms;
-        "
-      >
-        <section
-          class="flex flex-col items-center gap-7 bg-deep-forest px-5 py-32 text-center md:px-[120px]"
-        >
-          <h2
-            class="max-w-[560px] whitespace-pre-line font-serif text-[28px] leading-[1.3] tracking-[-0.3px] text-white md:text-[36px]"
-          >
-            같은 학교에서, 나랑 다 맞는 사람이 있을까?
-          </h2>
-          <p class="font-sans text-[16px] text-soft-leaf">
-            있더라고요. 한번 찾아보세요.
-          </p>
-          <button
-            type="button"
-            class="rounded-full bg-white px-9 py-4 font-sans text-[15px] font-semibold text-deep-forest transition-opacity hover:opacity-90"
-          >
-            나도 찾아보기
-          </button>
-        </section>
-      </div>
-      <div
-        class="scroll-reveal"
-        style="
-          opacity: 0;
-          transform: translateY(32px);
-          transition:
-            opacity 0.7s ease 0ms,
-            transform 0.7s ease 0ms;
-        "
-      >
-        <footer class="px-5 py-10 md:px-[120px]">
-          <div
-            class="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-0"
-          >
-            <span class="font-serif text-[20px] text-text-muted">matcha</span>
-            <div class="flex items-center gap-6">
-              <a
-                class="font-sans text-[13px] text-text-muted transition-colors hover:text-charcoal"
-                href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/terms"
-                >이용약관</a
-              ><a
-                class="font-sans text-[13px] text-text-muted transition-colors hover:text-charcoal"
-                href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/privacy"
-                >개인정보처리방침</a
-              ><a
-                href="mailto:contact@trymatcha.cc"
-                class="font-sans text-[13px] text-text-muted transition-colors hover:text-charcoal"
-                >문의하기</a
-              >
+            <!-- ─ 복제본 (루프용) ─ -->
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+              </div>
+              <p class="quote-text">진짜 잘 맞는 친구 찾았어요. 질문이 이렇게 디테일할 줄 몰랐는데, 매일 연락하는 사이가 됐습니다.</p>
+              <div class="divider"></div>
+              <div class="profile">
+                <div class="avatar" style="background: rgba(91,140,90,0.12); color: #5B8C5A;">경</div>
+                <div class="profile-info">
+                  <span class="profile-name">경영학과 21학번</span>
+                  <span class="profile-meta">어제 매칭됨 · 경희대</span>
+                </div>
+              </div>
             </div>
-            <div class="flex flex-col items-center gap-1 md:items-end">
-              <span class="font-sans text-[12px] text-text-muted"
-                >©
-                <!-- -->2026<!-- -->
-                matcha. All rights reserved.</span
-              ><span class="font-sans text-[11px] text-text-muted/60"
-                >Inspired by Date Drop</span
-              >
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+              </div>
+              <p class="quote-text">디자인도 너무 예쁘고 결과가 정말 정확해요. 60개 문항이 길다 했는데 다 할 보람이 있습니다!</p>
+              <div class="divider"></div>
+              <div class="profile">
+                <div class="avatar" style="background: rgba(61,90,61,0.1); color: #3D5A3D;">시</div>
+                <div class="profile-info">
+                  <span class="profile-name">시각디자인과 22학번</span>
+                  <span class="profile-meta">3일 전 매칭됨 · 경희대</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </footer>
-      </div>
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+              </div>
+              <p class="quote-text">학교 안에서 이렇게 코드 맞는 사람 만날 줄이야. 공대생인데 MBTI도 관심사도 다 비슷해서 신기했어요.</p>
+              <div class="divider"></div>
+              <div class="profile">
+                <div class="avatar" style="background: rgba(163,201,168,0.2); color: #4a7a49;">컴</div>
+                <div class="profile-info">
+                  <span class="profile-name">컴퓨터공학과 19학번</span>
+                  <span class="profile-meta">1주일 전 매칭됨 · 경희대</span>
+                </div>
+              </div>
+            </div>
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+              </div>
+              <p class="quote-text">주변에 다 추천하고 다녀요. 내 가치관을 제대로 알아주는 사람을 만나는 게 이렇게 다를 줄 몰랐어요.</p>
+              <div class="divider"></div>
+              <div class="profile">
+                <div class="avatar" style="background: rgba(91,140,90,0.09); color: #5B8C5A;">간</div>
+                <div class="profile-info">
+                  <span class="profile-name">간호학과 23학번</span>
+                  <span class="profile-meta">2주 전 매칭됨 · 경희대</span>
+                </div>
+              </div>
+            </div>
+            <div class="rcard-a">
+              <div class="stars">
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+                <svg viewBox="0 0 16 15">
+                  <path d="M8 0l2.09 5.26L16 5.85l-4.18 3.93 1.09 5.97L8 13l-4.91 2.75 1.09-5.97L0 5.85l5.91-.59z" />
+                </svg>
+              </div>
+              <p class="quote-text">익명이라 부담 없이 솔직하게 답할 수 있었어요. 첫 만남인데도 처음부터 편한 사람이 생겼습니다.</p>
+              <div class="divider"></div>
+              <div class="profile">
+                <div class="avatar" style="background: rgba(61,90,61,0.08); color: #3D5A3D;">사</div>
+                <div class="profile-info">
+                  <span class="profile-name">사회학과 20학번</span>
+                  <span class="profile-meta">4일 전 매칭됨 · 경희대</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /auto-scroll-track -->
+        </div><!-- /scroll-mask -->
+      </section>
     </div>
-    <!--$--><!--/$--><!--/$-->
-    <script>
-      (self.__next_f = self.__next_f || []).push([0]);
-    </script>
-    <script>
-      /* 스크롤 진입 애니메이션 — IntersectionObserver */
-      (function () {
-        var els = document.querySelectorAll('.scroll-reveal');
-        if (!els.length) return;
-        var observer = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.12 });
-        els.forEach(function (el) { observer.observe(el); });
-      })();
-    </script>
-  </body>
+    <div class="scroll-reveal" style="
+          opacity: 0;
+          transform: translateY(32px);
+          transition:
+            opacity 0.7s ease 0ms,
+            transform 0.7s ease 0ms;
+        ">
+      <section class="flex flex-col items-center gap-7 bg-deep-forest px-5 py-32 text-center md:px-[120px]">
+        <h2
+          class="max-w-[560px] whitespace-pre-line font-serif text-[28px] leading-[1.3] tracking-[-0.3px] text-white md:text-[36px]">
+          같은 학교에서, 나랑 다 맞는 사람이 있을까?
+        </h2>
+        <p class="font-sans text-[16px] text-soft-leaf">
+          있더라고요. 한번 찾아보세요.
+        </p>
+        <button type="button"
+          class="rounded-full bg-white px-9 py-4 font-sans text-[15px] font-semibold text-deep-forest transition-opacity hover:opacity-90">
+          나도 찾아보기
+        </button>
+      </section>
+    </div>
+    <div class="scroll-reveal" style="
+          opacity: 0;
+          transform: translateY(32px);
+          transition:
+            opacity 0.7s ease 0ms,
+            transform 0.7s ease 0ms;
+        ">
+      <footer class="px-5 py-10 md:px-[120px]">
+        <div class="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-0">
+          <span class="font-serif text-[20px] text-text-muted">matcha</span>
+          <div class="flex items-center gap-6">
+            <a class="font-sans text-[13px] text-text-muted transition-colors hover:text-charcoal"
+              href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/terms">이용약관</a><a
+              class="font-sans text-[13px] text-text-muted transition-colors hover:text-charcoal"
+              href="https://matcha-pzu5ab092-hyeonjae-s-projects.vercel.app/privacy">개인정보처리방침</a><a
+              href="mailto:contact@trymatcha.cc"
+              class="font-sans text-[13px] text-text-muted transition-colors hover:text-charcoal">문의하기</a>
+          </div>
+          <div class="flex flex-col items-center gap-1 md:items-end">
+            <span class="font-sans text-[12px] text-text-muted">©
+              <!-- -->2026<!-- -->
+              matcha. All rights reserved.</span><span class="font-sans text-[11px] text-text-muted/60">Inspired by Date
+              Drop</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--$--><!--/$--><!--/$-->
+  <script>
+    (self.__next_f = self.__next_f || []).push([0]);
+  </script>
+  <script>
+    /* 스크롤 진입 애니메이션 — IntersectionObserver */
+    (function () {
+      var els = document.querySelectorAll('.scroll-reveal');
+      if (!els.length) return;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { observer.observe(el); });
+    })();
+  </script>
+</body>
+
 </html>
