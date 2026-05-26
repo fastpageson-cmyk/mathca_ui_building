@@ -1,174 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="./src/css/report.css" />
-<style>
-  /* 버전 컨트롤 UI용 기본 스타일 */
-  .version-control {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-  .toggle-group {
-    display: inline-flex;
-    background: #e8e8e8;
-    border-radius: 8px;
-    padding: 4px;
-  }
-  .toggle-btn {
-    background: transparent;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #666;
-    transition: all 0.2s ease;
-  }
-  .toggle-btn.active {
-    background: #fff;
-    color: #111;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matcha Report Versions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: #e8e8e8;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .header {
+      padding: 16px;
+      background: #ffffff;
+      text-align: center;
+      border-bottom: 1px solid #dcdcdc;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      z-index: 10;
+    }
+    .toggle-group {
+      display: inline-flex;
+      background: #f0f0f0;
+      border-radius: 8px;
+      padding: 4px;
+    }
+    .toggle-btn {
+      background: transparent;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      cursor: pointer;
+      color: #777;
+      transition: all 0.2s;
+    }
+    .toggle-btn.active {
+      background: #fff;
+      color: #222;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+      background: #fff;
+    }
+  </style>
 </head>
 <body>
-<div style="margin:0;padding:0;background-color:#f7f7f7;font-family:'SF Pro Display',-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR',sans-serif">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td align="center" style="padding:40px 20px 56px">
-
-<div class="version-control">
-  <div class="toggle-group">
-    <button id="btn-v1" class="toggle-btn active">버전 1 (전체)</button>
-    <button id="btn-v2" class="toggle-btn">버전 2 (요약 제외)</button>
-    <button id="btn-v3" class="toggle-btn">버전 3 (섹션 제외)</button>
+  <div class="header">
+    <div class="toggle-group">
+      <button id="btn-classic" class="toggle-btn">클래식 디자인 (이메일 폼)</button>
+      <button id="btn-modern" class="toggle-btn active">모던 디자인 (웹앱 폼)</button>
+    </div>
+    <p style="margin: 10px 0 0 0; font-size: 13px; color: #888;">아래 화면 안의 버튼을 클릭해 세부 요소(V1~V4)를 제외해 볼 수 있습니다.</p>
   </div>
-</div>
-
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:460px">
-
-  <tbody><tr><td style="padding:0 0 40px">
-    <span style="font-size:17px;font-weight:700;color:#2d5a2d;letter-spacing:-0.5px">matcha</span>
-  </td></tr>
-
-  <tr><td>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:12px;border:1px solid #e8e8e8">
-      <tbody><tr><td style="padding:36px 32px 40px">
-
-        <p style="margin:0 0 2px;font-size:11px;font-weight:500;color:#999;letter-spacing:1.5px;text-transform:uppercase">Compatibility Report</p>
-        <p style="margin:0 0 32px;font-size:20px;font-weight:700;color:#111;letter-spacing:-0.3px;line-height:1.4">딱 맞는 상대를 찾았어요!</p>
-
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tbody><tr><td style="height:1px;background-color:#ebebeb;font-size:0;line-height:0">&nbsp;</td></tr>
-        </tbody></table>
-
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0 6px">
-          <tbody><tr><td style="font-size:11px;font-weight:500;color:#999;letter-spacing:1.2px;text-transform:uppercase;padding:0 0 8px">상대방</td></tr>
-          <tr><td style="font-size:15px;font-weight:600;color:#333;word-break:break-all"><a href="mailto:kimgunwoo@email.com" target="_blank" style="color:#2d5a2d;text-decoration:none;">kimgunwoo@email.com</a></td></tr>
-        </tbody></table>
-        <p style="margin:0 0 28px;font-size:13px;color:#999;line-height:1.6">맞차 유저가 1000명이 되었으면 좋겠습니다.</p>
-
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tbody><tr><td style="height:1px;background-color:#ebebeb;font-size:0;line-height:0">&nbsp;</td></tr>
-        </tbody></table>
-
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0 28px">
-          <tbody><tr><td style="font-size:11px;font-weight:500;color:#999;letter-spacing:1.2px;text-transform:uppercase;padding:0 0 12px">총 궁합도</td></tr>
-          <tr><td style="padding:0 0 4px">
-            <span style="font-size:52px;font-weight:300;color:#2d5a2d;letter-spacing:-3px;line-height:1">86</span><span style="font-size:24px;font-weight:300;color:#2d5a2d">%</span>
-          </td></tr>
-          <tr><td style="font-size:13px;color:#666;padding:4px 0 0">성격 결이 잘 맞아요!</td></tr>
-        </tbody></table>
-
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tbody><tr><td style="height:1px;background-color:#ebebeb;font-size:0;line-height:0">&nbsp;</td></tr>
-        </tbody></table>
-
-        <!-- 분석 요약 래퍼 (버전 2에서 숨김) -->
-        <div id="section-summary">
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0 12px">
-            <tbody><tr><td style="font-size:11px;font-weight:500;color:#999;letter-spacing:1.2px;text-transform:uppercase">분석 요약</td></tr>
-          </tbody></table>
-          <p style="margin:0 0 4px;font-size:13px;color:#666;line-height:1.8">· 사교적인 성향이 비슷해요</p><p style="margin:0 0 4px;font-size:13px;color:#666;line-height:1.8">· 에너지를 얻는 방식이 비슷해요</p><p style="margin:0 0 4px;font-size:13px;color:#666;line-height:1.8">· 활발한 성격이 비슷해요</p>
-        </div>
-
-        <!-- Dynamic Report Container -->
-        <div id="report-container" style="margin-top:32px;"></div>
-
-        <!-- 섹션 분석 래퍼 (버전 3에서 숨김) -->
-        <div id="section-analysis">
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:28px">
-            <tbody><tr><td style="height:1px;background-color:#ebebeb;font-size:0;line-height:0">&nbsp;</td></tr>
-          </tbody></table>
-
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0 16px">
-            <tbody><tr><td style="font-size:11px;font-weight:500;color:#999;letter-spacing:1.2px;text-transform:uppercase">섹션 분석</td></tr>
-          </tbody></table>
-          
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:16px">
-            <tbody><tr>
-              <td style="font-size:13px;font-weight:400;color:#666;padding:0 0 6px">성격</td>
-              <td style="font-size:13px;font-weight:600;color:#333;padding:0 0 6px;text-align:right">91%</td>
-            </tr>
-            <tr><td colspan="2" style="padding:0">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tbody><tr><td style="background-color:#f0f0f0;border-radius:2px;height:3px;padding:0">
-                  <div style="background-color:#2d5a2d;border-radius:2px;height:3px;width:91%"></div>
-                </td></tr>
-              </tbody></table>
-            </td></tr>
-          </tbody></table>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:16px">
-            <tbody><tr>
-              <td style="font-size:13px;font-weight:400;color:#666;padding:0 0 6px">가치관</td>
-              <td style="font-size:13px;font-weight:600;color:#333;padding:0 0 6px;text-align:right">89%</td>
-            </tr>
-            <tr><td colspan="2" style="padding:0">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tbody><tr><td style="background-color:#f0f0f0;border-radius:2px;height:3px;padding:0">
-                  <div style="background-color:#2d5a2d;border-radius:2px;height:3px;width:89%"></div>
-                </td></tr>
-              </tbody></table>
-            </td></tr>
-          </tbody></table>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:16px">
-            <tbody><tr>
-              <td style="font-size:13px;font-weight:400;color:#666;padding:0 0 6px">라이프스타일</td>
-              <td style="font-size:13px;font-weight:600;color:#333;padding:0 0 6px;text-align:right">76%</td>
-            </tr>
-            <tr><td colspan="2" style="padding:0">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tbody><tr><td style="background-color:#f0f0f0;border-radius:2px;height:3px;padding:0">
-                  <div style="background-color:#2d5a2d;border-radius:2px;height:3px;width:76%"></div>
-                </td></tr>
-              </tbody></table>
-            </td></tr>
-          </tbody></table>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:0">
-            <tbody><tr>
-              <td style="font-size:13px;font-weight:400;color:#666;padding:0 0 6px">연애관</td>
-              <td style="font-size:13px;font-weight:600;color:#333;padding:0 0 6px;text-align:right">84%</td></tr>
-            <tr><td colspan="2" style="padding:0">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tbody><tr><td style="background-color:#f0f0f0;border-radius:2px;height:3px;padding:0">
-                  <div style="background-color:#2d5a2d;border-radius:2px;height:3px;width:84%"></div>
-                </td></tr>
-              </tbody></table>
-            </td></tr>
-          </tbody></table>
-        </div> <!-- End of section-analysis -->
-
-      </td></tr></tbody></table>
-  </td></tr>
-
-  <tr><td style="padding:32px 0 0">
-    <p style="margin:0;font-size:11px;color:#bbb;text-align:center;">© matcha</p>
-  </td></tr>
-
-</tbody></table>
-</td></tr></tbody></table>
-</div>
-
-<script src="src/js/report.js"></script>
+  <iframe id="frame" src="report_modern.html"></iframe>
+  <script>
+    const btnClassic = document.getElementById('btn-classic');
+    const btnModern = document.getElementById('btn-modern');
+    const frame = document.getElementById('frame');
+    
+    btnClassic.addEventListener('click', () => {
+      btnClassic.classList.add('active');
+      btnModern.classList.remove('active');
+      frame.src = 'report_classic.html';
+    });
+    
+    btnModern.addEventListener('click', () => {
+      btnModern.classList.add('active');
+      btnClassic.classList.remove('active');
+      frame.src = 'report_modern.html';
+    });
+  </script>
 </body>
 </html>
