@@ -1,0 +1,11 @@
+Read `AGENTS.md` first and follow it as the source of truth for this project.
+
+Before making changes:
+- Read `docs/PROJECT_CONTEXT.md`.
+- Check `docs/CHANGELOG.md` for recent work.
+- Keep edits scoped to the requested files.
+
+After making changes:
+- Update `docs/CHANGELOG.md`.
+- Run `npm run build` when code or markup changes.
+- Keep `src/data/match_messages.json` and `public/src/data/match_messages.json` in sync when editing report messages.

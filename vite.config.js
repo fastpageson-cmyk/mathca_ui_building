@@ -8,6 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         landing: resolve(__dirname, 'landing.html'),
         report: resolve(__dirname, 'report.html'),
+        surveyIntro: resolve(__dirname, 'mockups/survey-complete-intro.html'),
       },
     },
   },

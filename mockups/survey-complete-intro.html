@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>matcha - 설문 완료 개선안</title>
+  <meta name="description" content="설문 완료 페이지에 상대에게 전해줄 자기소개 한마디 입력란을 추가한 개선 시안입니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --warm-cream: #faf8f2;
+      --charcoal: #2c2c2c;
+      --deep-forest: #3d5a3d;
+      --matcha-green: #5b8c5a;
+      --text-secondary: #6b6b6b;
+      --text-muted: #9a9a8a;
+      --border: #e5e2dc;
+      --soft-coral: #c67a52;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--warm-cream);
+      color: var(--charcoal);
+      font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      display: flex;
+      justify-content: center;
+      padding: 16px 16px 0;
+    }
+
+    .nav-shell {
+      width: 100%;
+      max-width: 720px;
+      overflow: hidden;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(24px) saturate(1.4);
+      -webkit-backdrop-filter: blur(24px) saturate(1.4);
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+    }
+
+    .brand {
+      font-family: "DM Serif Display", serif;
+      font-size: 22px;
+      color: var(--deep-forest);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-link {
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--charcoal);
+    }
+
+    .start-link {
+      background: var(--deep-forest);
+      color: #fff;
+      border-radius: 9999px;
+      padding: 8px 20px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .menu-button {
+      display: none;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .menu-button span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--charcoal);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      padding: 92px 20px 64px;
+    }
+
+    .success-icon {
+      width: 82px;
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      background: rgba(91, 140, 90, 0.08);
+    }
+
+    .headline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    h1,
+    h2 {
+      font-family: "DM Serif Display", serif;
+      margin: 0;
+      font-weight: 400;
+      color: var(--charcoal);
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .subtext {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 11px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 26px 30px;
+    }
+
+    .mini-icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      background: rgba(198, 122, 82, 0.125);
+      font-size: 18px;
+    }
+
+    .card-secondary {
+      color: var(--text-secondary);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .card-muted {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    .mail-link {
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      padding: 6px 18px;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .delivery-card {
+      gap: 11px;
+    }
+
+    .intro-block {
+      width: 100%;
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .intro-head {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .intro-label-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .intro-label {
+      color: var(--charcoal);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .intro-help {
+      color: var(--matcha-green);
+      font-size: 12.5px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .intro-textarea-wrap {
+      position: relative;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 64px;
+      resize: none;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      background: #fff;
+      color: var(--charcoal);
+      padding: 12px 14px 30px;
+      font: inherit;
+      font-size: 14px;
+      line-height: 1.5;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    textarea::placeholder {
+      color: rgba(154, 154, 138, 0.72);
+    }
+
+    textarea:focus {
+      border-color: rgba(91, 140, 90, 0.7);
+      box-shadow: 0 0 0 4px rgba(91, 140, 90, 0.12);
+    }
+
+    .char-count {
+      position: absolute;
+      right: 16px;
+      bottom: 10px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .toggle-card {
+      gap: 20px;
+    }
+
+    .toggle-button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .toggle-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    .toggle-title {
+      color: var(--charcoal);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .toggle-description {
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 48px;
+      height: 28px;
+      flex-shrink: 0;
+      border-radius: 9999px;
+      background: #e5e2dc;
+      transition: background-color 0.25s ease;
+    }
+
+    .toggle-switch.active {
+      background: var(--matcha-green);
+    }
+
+    .toggle-knob {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 22px;
+      height: 22px;
+      border-radius: 9999px;
+      background: #fff;
+      transform: translateX(0);
+      transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .toggle-switch.active .toggle-knob {
+      transform: translateX(20px);
+    }
+
+    .actions {
+      width: 100%;
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .action-link {
+      display: block;
+      border-radius: 9999px;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .action-primary {
+      background: rgba(91, 140, 90, 0.85);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .action-secondary {
+      background: #fff;
+      color: var(--charcoal);
+      border: 1.5px solid var(--border);
+      font-weight: 500;
+    }
+
+    .mail-link {
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      padding: 6px 18px;
+      font-size: 13px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+    
+    .mail-link:hover {
+      background-color: rgba(0, 0, 0, 0.02);
+      border-color: var(--text-muted);
+    }
+
+    @media (max-width: 640px) {
+      .nav-links {
+        display: none;
+      }
+
+      .menu-button {
+        display: flex;
+      }
+
+      main {
+        gap: 24px;
+        padding: 92px 20px 56px;
+      }
+
+      .card {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="주요 메뉴">
+    <div class="nav-shell">
+      <div class="nav-inner">
+        <a class="brand" href="#">matcha</a>
+        <div class="nav-links">
+          <a class="nav-link" href="#">소개</a>
+          <a class="nav-link" href="#">통계</a>
+          <a class="start-link" href="#">시작하기</a>
+        </div>
+        <button type="button" class="menu-button" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="success-icon" aria-hidden="true">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 27L21 38L41 16" stroke="#5B8C5A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+
+    <section class="headline" aria-labelledby="complete-title">
+      <h1 id="complete-title">모두 완료!</h1>
+      <p class="subtext">모든 질문에 답해주셨습니다.
+당신의 이야기를 들려주셔서 감사합니다.</p>
+    </section>
+
+    <section class="card delivery-card" aria-labelledby="schedule-title">
+      <div class="mini-icon" aria-hidden="true">📅</div>
+      <h2 id="schedule-title">다음 주 월요일</h2>
+      <p class="card-secondary">2026년 5월 18일 (월) 오후 5시</p>
+      <p class="card-muted">당신과 잘 맞는 사람의 성향을 요약해
+이메일로 보내드리니, 스팸함도 확인해주세요.</p>
+
+      <div class="intro-block">
+        <div class="intro-head">
+          <div class="intro-label-wrap">
+            <label class="intro-label" id="intro-title" for="intro-message">상대에게 전해줄 자기소개 한마디</label>
+            <p class="intro-help">매칭된 상대에게 처음 전달될 한마디를 적어주세요.</p>
+          </div>
+        </div>
+        <div class="intro-textarea-wrap">
+          <textarea id="intro-message" maxlength="100" placeholder="예: 주말엔 전시 보러 가는 걸 좋아해요. 편하게 대화해요 :)"></textarea>
+          <span class="char-count"><span id="intro-count">0</span>/100</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card toggle-card" aria-label="매칭 제외 설정">
+      <button type="button" class="toggle-button" id="btn-exclude-toggle">
+        <span class="toggle-text">
+          <span class="toggle-title">다음 매칭에서 나를 제외해주세요</span>
+          <span class="toggle-description">매칭에 참여하고 싶지 않으면 켜주세요. 언제든 해제할 수 있습니다.</span>
+        </span>
+        <span class="toggle-switch" id="exclude-switch" aria-hidden="true">
+          <span class="toggle-knob"></span>
+        </span>
+      </button>
+    </section>
+
+    <a href="mailto:contact@trymatcha.cc" class="mail-link">✉ contact@trymatcha.cc</a>
+
+    <div class="actions">
+      <a class="action-link action-primary" href="#">설문 다시하기</a>
+      <a class="action-link action-secondary" href="#">우리 학교 통계 보기</a>
+    </div>
+  </main>
+
+  <script>
+    const introMessage = document.getElementById('intro-message');
+    const introCount = document.getElementById('intro-count');
+
+    introMessage.addEventListener('input', () => {
+      introCount.textContent = introMessage.value.length;
+      
+      // 90자 이상일 때 강조
+      if (introMessage.value.length >= 90) {
+        introCount.style.color = 'var(--soft-coral)';
+        introCount.style.fontWeight = '700';
+      } else {
+        introCount.style.color = 'var(--text-muted)';
+        introCount.style.fontWeight = '400';
+      }
+    });
+
+    // 매칭 제외 토글 인터랙션
+    const excludeToggle = document.getElementById('btn-exclude-toggle');
+    const excludeSwitch = document.getElementById('exclude-switch');
+
+    excludeToggle.addEventListener('click', () => {
+      excludeSwitch.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

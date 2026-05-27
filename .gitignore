@@ -21,4 +21,6 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+# Raw saved survey complete files
+설문완료.html
+matcha - *

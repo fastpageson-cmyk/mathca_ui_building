@@ -77,6 +77,7 @@
     .toggle-container {
       position: relative;
       display: inline-flex;
+      flex-wrap: wrap;
       background: rgba(0, 0, 0, 0.05);
       padding: 4px;
       border-radius: 999px;
@@ -88,11 +89,11 @@
       top: 4px;
       left: 4px;
       height: calc(100% - 8px);
-      width: calc(50% - 4px);
+      width: 0;
       background: #ffffff;
       border-radius: 999px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+      transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
       z-index: 1;
     }
 
@@ -104,6 +105,7 @@
       font-size: 14px;
       font-weight: 600;
       font-family: inherit;
+      white-space: nowrap;
       color: rgba(44, 44, 44, 0.6);
       cursor: pointer;
       z-index: 2;
@@ -150,11 +152,12 @@
       }
       .toggle-container {
         width: 100%;
+        border-radius: 24px;
       }
       .toggle-btn {
-        flex: 1;
+        flex: 1 1 100%;
         justify-content: center;
-        padding: 10px 0;
+        padding: 10px 12px;
       }
     }
   </style>
@@ -168,11 +171,14 @@
 
     <div class="toggle-container">
       <div class="toggle-slider" id="slider"></div>
-      <button id="btn-landing" class="toggle-btn active" onclick="switchView('landing')">
+      <button id="btn-landing" class="toggle-btn active" data-view="landing" onclick="switchView('landing')">
         ✨ 후기 시안 (랜딩 페이지)
       </button>
-      <button id="btn-report" class="toggle-btn" onclick="switchView('report')">
+      <button id="btn-report" class="toggle-btn" data-view="report" onclick="switchView('report')">
         ✉️ 이메일 시안 (매칭 리포트)
+      </button>
+      <button id="btn-survey-intro" class="toggle-btn" data-view="surveyIntro" onclick="switchView('surveyIntro')">
+        📝 설문 완료 개선안
       </button>
     </div>
 
@@ -185,44 +191,39 @@
 
   <script>
     const frame = document.getElementById('viewer-frame');
-    const btnLanding = document.getElementById('btn-landing');
-    const btnReport = document.getElementById('btn-report');
+    const buttons = Array.from(document.querySelectorAll('.toggle-btn'));
     const slider = document.getElementById('slider');
+    const views = {
+      landing: 'landing.html',
+      report: 'report.html',
+      surveyIntro: 'mockups/survey-complete-intro.html'
+    };
 
-    function switchView(view) {
-      frame.style.opacity = '0.3';
-      
-      if (view === 'landing') {
-        btnLanding.classList.add('active');
-        btnReport.classList.remove('active');
-        slider.style.transform = 'translateX(0)';
-        
-        setTimeout(() => {
-          frame.src = 'landing.html';
-          frame.style.opacity = '1';
-        }, 150);
-      } else {
-        btnReport.classList.add('active');
-        btnLanding.classList.remove('active');
-        
-        // Calculate dynamic translation based on active button size
-        const offset = btnLanding.offsetWidth;
-        slider.style.transform = `translateX(${offset}px)`;
-        
-        setTimeout(() => {
-          frame.src = 'report.html';
-          frame.style.opacity = '1';
-        }, 150);
-      }
+    function moveSlider(activeButton) {
+      slider.style.width = `${activeButton.offsetWidth}px`;
+      slider.style.transform = `translateX(${activeButton.offsetLeft - 4}px)`;
     }
 
-    // Adjust slider width on window resize to ensure it aligns perfectly
+    function switchView(view) {
+      const activeButton = buttons.find(button => button.dataset.view === view);
+      if (!activeButton || !views[view]) return;
+
+      frame.style.opacity = '0.3';
+      buttons.forEach(button => button.classList.toggle('active', button === activeButton));
+      moveSlider(activeButton);
+
+      setTimeout(() => {
+        frame.src = views[view];
+        frame.style.opacity = '1';
+      }, 150);
+    }
+
     window.addEventListener('resize', () => {
-      if (btnReport.classList.contains('active')) {
-        const offset = btnLanding.offsetWidth;
-        slider.style.transform = `translateX(${offset}px)`;
-      }
+      const activeButton = buttons.find(button => button.classList.contains('active'));
+      if (activeButton) moveSlider(activeButton);
     });
+
+    window.addEventListener('load', () => moveSlider(buttons[0]));
   </script>
 </body>
 </html>
